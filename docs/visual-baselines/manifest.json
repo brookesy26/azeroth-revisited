@@ -1,0 +1,36 @@
+{
+  "reviewDate": "2026-10-06",
+  "engine": "Chromium via Edge",
+  "browserVersion": "154.0.4258.62",
+  "pixelRatio": 1,
+  "purpose": "Approved initial layout references. Human review precedes any baseline replacement. Browser/font/content differences can change pixels.",
+  "images": [
+    {
+      "file": "home-desktop.png",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "capture": "Full page, images decoded."
+    },
+    {
+      "file": "home-mobile.png",
+      "route": "/",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "capture": "Full page, images decoded."
+    },
+    {
+      "file": "warrior-talent-detail.png",
+      "route": "/classes/warrior/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "capture": "Talent-calculator component only; Improved Heroic Strike selected with 1 point allocated; level 60."
+    }
+  ]
+}

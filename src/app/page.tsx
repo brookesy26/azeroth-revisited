@@ -1,69 +1,153 @@
 import Image from "next/image";
-
+import Link from "next/link";
+import { ButtonLink } from "@/components/atoms/button-link";
+import { LaunchCountdown } from "@/features/countdown/launch-countdown";
+import { getNews, getClasses, getFeaturedNews } from "@/lib/content/repository";
 export default function Home() {
+  const news = getNews();
+  const featuredNews = getFeaturedNews();
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <>
+      <section className="wow-hero">
+        <div className="wow-hero-copy">
+          <p className="wow-kicker">VANILLA ROOTS. A NEW CHAPTER.</p>
+          <h1>
+            Back to Azeroth.
+            <br />
+            <em>Into the unknown.</em>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p>
+            The roads are familiar. The adventure has changed. Catch up on WoW
+            Forever, from reworked classes to new corners of the world.
           </p>
+          <div className="wow-actions">
+            <ButtonLink href="/returning-players/">
+              Returning to WoW →
+            </ButtonLink>
+            <ButtonLink href="/coming-from-retail/" secondary>
+              Coming from Retail →
+            </ButtonLink>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+        <span className="wow-art-credit">
+          CLASSIC WARCRAFT ART · BLACKROCK DEPTHS
+        </span>
+      </section>
+      <LaunchCountdown />
+      <div className="wow-content">
+        <section>
+          <div className="wow-heading">
+            <h2>News from Azeroth</h2>
+            <Link href="/news/">All news & beta updates →</Link>
+          </div>
+          <p className="feed-status">
+            Official posts via an attributed community feed · Checked{" "}
+            <time dateTime={news.updatedAt}>
+              {new Date(news.updatedAt).toLocaleString("en-GB", {
+                timeZone: "Europe/London",
+              })}{" "}
+              UK
+            </time>
+          </p>
+          <div className="wow-news-grid">
+            {featuredNews.map((item, index) => (
+              <article className="wow-news-card" key={item.url}>
+                <div
+                  className={`wow-news-art ${index ? "kingdom" : "molten"}`}
+                  aria-hidden="true"
+                />
+                <div className="wow-news-copy">
+                  <span className="wow-label">OFFICIAL · {item.category}</span>
+                  <h3>
+                    <a href={item.url}>{item.title}</a>
+                  </h3>
+                  <p>Read the original Blizzard post for the latest details.</p>
+                  <a className="wow-inline-link" href={item.url}>
+                    Read official update ↗
+                  </a>
+                  <small>
+                    {new Date(item.date).toLocaleDateString("en-GB")} · Blizzard
+                  </small>
+                </div>
+              </article>
+            ))}
+          </div>
+          <p className="art-caption">
+            Classic artwork provides atmosphere; it does not depict each news
+            post.
+          </p>
+        </section>
+        <section className="wow-class-section">
+          <div className="wow-heading">
+            <h2>Know your class again</h2>
+            <Link href="/classes/">Classes & talents →</Link>
+          </div>
+          <div className="wow-class-grid">
+            {getClasses().map((item) => (
+              <Link
+                className="wow-class"
+                href={`/classes/${item.slug}/`}
+                key={item.id}
+              >
+                <Image
+                  src={`/images/${item.slug}.webp`}
+                  alt=""
+                  width={39}
+                  height={39}
+                />
+                <span>{item.name}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+        <section className="wow-retail-callout">
+          <div>
+            <p className="wow-kicker">MAKING THE MOVE FROM RETAIL?</p>
+            <h2>A familiar game. A different rhythm.</h2>
+            <p>
+              Learn how the level-60 journey, talent trees, trainers and
+              tactical combat change the way you play. All our gameplay guides
+              cover Forever.
+            </p>
+          </div>
+          <ButtonLink href="/coming-from-retail/" secondary>
+            Coming from Retail →
+          </ButtonLink>
+        </section>
+        <section className="guide-links">
+          <h2>Choose your next adventure</h2>
+          <div className="card-grid">
+            {[
+              [
+                "questing",
+                "Questing & levelling",
+                "Prepare your route through a changed world.",
+              ],
+              [
+                "races-and-areas",
+                "New races & areas",
+                "Meet the Skyborne and discover new destinations.",
+              ],
+              [
+                "dungeons-and-raids",
+                "Dungeons & raids",
+                "Know the announced adventures and prepare your party.",
+              ],
+              [
+                "professions",
+                "Professions & camping",
+                "Make useful things and find a place by the fire.",
+              ],
+            ].map(([slug, title, description]) => (
+              <Link className="guide-card" href={`/${slug}/`} key={slug}>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <span>Explore guide →</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      </div>
+    </>
   );
 }

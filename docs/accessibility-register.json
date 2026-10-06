@@ -1,0 +1,524 @@
+{
+  "standard": "WCAG 2.2",
+  "reviewDate": "2026-10-06",
+  "scope": "Current static guide site and client interactions",
+  "conformanceClaim": false,
+  "criteria": [
+    {
+      "criterion": "1.1.1",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Review decorative imagery and meaningful class/talent labels."
+    },
+    {
+      "criterion": "1.2.1",
+      "level": "A",
+      "status": "not applicable",
+      "evidence": "No prerecorded or live audio/video is part of the current site."
+    },
+    {
+      "criterion": "1.2.2",
+      "level": "A",
+      "status": "not applicable",
+      "evidence": "No prerecorded or live audio/video is part of the current site."
+    },
+    {
+      "criterion": "1.2.3",
+      "level": "A",
+      "status": "not applicable",
+      "evidence": "No prerecorded or live audio/video is part of the current site."
+    },
+    {
+      "criterion": "1.2.4",
+      "level": "AA",
+      "status": "not applicable",
+      "evidence": "No prerecorded or live audio/video is part of the current site."
+    },
+    {
+      "criterion": "1.2.5",
+      "level": "AA",
+      "status": "not applicable",
+      "evidence": "No prerecorded or live audio/video is part of the current site."
+    },
+    {
+      "criterion": "1.2.6",
+      "level": "AAA",
+      "status": "not applicable",
+      "evidence": "No prerecorded or live audio/video is part of the current site."
+    },
+    {
+      "criterion": "1.2.7",
+      "level": "AAA",
+      "status": "not applicable",
+      "evidence": "No prerecorded or live audio/video is part of the current site."
+    },
+    {
+      "criterion": "1.2.8",
+      "level": "AAA",
+      "status": "not applicable",
+      "evidence": "No prerecorded or live audio/video is part of the current site."
+    },
+    {
+      "criterion": "1.2.9",
+      "level": "AAA",
+      "status": "not applicable",
+      "evidence": "No prerecorded or live audio/video is part of the current site."
+    },
+    {
+      "criterion": "1.3.1",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Review headings, table headers, landmarks and talent tree relationships with assistive technology."
+    },
+    {
+      "criterion": "1.3.2",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Read complete routes with a screen reader; manual testing unavailable in initial automation."
+    },
+    {
+      "criterion": "1.3.3",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "1.3.4",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Check portrait and landscape without orientation restrictions."
+    },
+    {
+      "criterion": "1.3.5",
+      "level": "AA",
+      "status": "not applicable",
+      "evidence": "No personal-information input fields."
+    },
+    {
+      "criterion": "1.3.6",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "1.4.1",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Confirm selection, rank and eligibility information do not depend on colour."
+    },
+    {
+      "criterion": "1.4.2",
+      "level": "A",
+      "status": "not applicable",
+      "evidence": "No autoplaying audio."
+    },
+    {
+      "criterion": "1.4.3",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Measure every text/background combination, including scenery overlays and disabled controls."
+    },
+    {
+      "criterion": "1.4.4",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Check text at 200% browser zoom."
+    },
+    {
+      "criterion": "1.4.5",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "1.4.6",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Measure enhanced contrast separately from AA minimum contrast."
+    },
+    {
+      "criterion": "1.4.7",
+      "level": "AAA",
+      "status": "not applicable",
+      "evidence": "No prerecorded speech or background audio."
+    },
+    {
+      "criterion": "1.4.8",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Review AAA visual presentation controls and text line length; do not infer from dark theme."
+    },
+    {
+      "criterion": "1.4.9",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "1.4.10",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "All 28 exported routes showed no page overflow at 640 and 320 CSS pixels, modelling 200%/400% reflow on a 1280px layout. Actual browser zoom and complete visual content-loss inspection remain pending. Evidence artifacts/qa/accessibility-review.json."
+    },
+    {
+      "criterion": "1.4.11",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Forced-colors mode emulated on home, Warrior and Retail-transition routes: controls retained geometry and no page overflow. Actual nontext contrast measurements and manual control review remain pending."
+    },
+    {
+      "criterion": "1.4.12",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "All 28 routes tested with 1.5 line height, 2em paragraph spacing, .12em letter and .16em word spacing: no page overflow or hidden/clipped text containers detected. Three example screenshots saved. Manual full-text-loss inspection remains pending. Evidence artifacts/qa/accessibility-review.json."
+    },
+    {
+      "criterion": "1.4.13",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Check talent descriptions and any hover/focus content for dismissal and persistence."
+    },
+    {
+      "criterion": "2.1.1",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Actual keyboard events verified skip link, mobile menu, search result activation and talent allocation/refund. Full share/import/reset and all-route keyboard traversal remain pending. Evidence artifacts/qa/accessibility-review.json."
+    },
+    {
+      "criterion": "2.1.2",
+      "level": "A",
+      "status": "tested",
+      "evidence": "Shared mobile native dialog tested through sixteen Tab events: background controls not reachable; Escape closes and restores opener. Keyboard search and talent allocation/refund also completed without a trap. Browser chrome remains reachable. Evidence artifacts/qa/accessibility-review.json."
+    },
+    {
+      "criterion": "2.1.3",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.1.4",
+      "level": "A",
+      "status": "not applicable",
+      "evidence": "No single-character shortcut is defined."
+    },
+    {
+      "criterion": "2.2.1",
+      "level": "A",
+      "status": "not applicable",
+      "evidence": "No time limit is imposed on a task. The launch date is information."
+    },
+    {
+      "criterion": "2.2.2",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Review countdown update/pause behaviour and any moving imagery."
+    },
+    {
+      "criterion": "2.2.3",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.2.4",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.2.5",
+      "level": "AAA",
+      "status": "not applicable",
+      "evidence": "No authentication or session expiry."
+    },
+    {
+      "criterion": "2.2.6",
+      "level": "AAA",
+      "status": "not applicable",
+      "evidence": "No inactivity timeout."
+    },
+    {
+      "criterion": "2.3.1",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Review all artwork, transitions and UI for flashes."
+    },
+    {
+      "criterion": "2.3.2",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Verify absence of any flashing content."
+    },
+    {
+      "criterion": "2.3.3",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Reduced-motion preference emulated on home, Warrior and Retail-transition routes: zero running animations observed. Complete interaction-animation review remains pending. Evidence artifacts/qa/accessibility-review.json."
+    },
+    {
+      "criterion": "2.4.1",
+      "level": "A",
+      "status": "tested",
+      "evidence": "Shared skip link verified with actual Tab and Enter on homepage: first focused control and Enter focuses main. Evidence artifacts/qa/accessibility-review.json. Scope: shared shell component; no whole-site conformance claim."
+    },
+    {
+      "criterion": "2.4.2",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Check unique useful page titles for every exported route."
+    },
+    {
+      "criterion": "2.4.3",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Review keyboard order including opening/closing the navigation dialog."
+    },
+    {
+      "criterion": "2.4.4",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.4.5",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.4.6",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.4.7",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Enabled talent refund button tested with keyboard: solid 3px visible outline; focused control within viewport. Every interactive focus style still needs review. Evidence artifacts/qa/accessibility-review.json."
+    },
+    {
+      "criterion": "2.4.8",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.4.9",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.4.10",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.4.11",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Representative focused talent control fully within viewport; mobile dialog focus return checked. All-route sticky-header and overlay obstruction review remains pending."
+    },
+    {
+      "criterion": "2.4.12",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Check enhanced focus visibility with no obscuring."
+    },
+    {
+      "criterion": "2.4.13",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Measure focus area and contrast against AAA thresholds."
+    },
+    {
+      "criterion": "2.5.1",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.5.2",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.5.3",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.5.4",
+      "level": "A",
+      "status": "not applicable",
+      "evidence": "No motion sensor input."
+    },
+    {
+      "criterion": "2.5.5",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Measure targets against enhanced target-size requirements."
+    },
+    {
+      "criterion": "2.5.6",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "2.5.7",
+      "level": "AA",
+      "status": "not applicable",
+      "evidence": "No drag interaction is required."
+    },
+    {
+      "criterion": "2.5.8",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Measure targets and spacing against minimum target-size requirements."
+    },
+    {
+      "criterion": "3.1.1",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "3.1.2",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "3.1.3",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Review explanations for gameplay terminology."
+    },
+    {
+      "criterion": "3.1.4",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Review abbreviation expansions throughout guides."
+    },
+    {
+      "criterion": "3.1.5",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Review reading level and explanatory alternatives; no reading-level audit performed."
+    },
+    {
+      "criterion": "3.1.6",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Review ambiguous pronunciation if identified in guide prose."
+    },
+    {
+      "criterion": "3.2.1",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "3.2.2",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "3.2.3",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "3.2.4",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "3.2.5",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "3.2.6",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "3.3.1",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Check invalid shared-build messages and calculator error feedback."
+    },
+    {
+      "criterion": "3.3.2",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Review labels for search, level selection and talent controls."
+    },
+    {
+      "criterion": "3.3.3",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Review actionable invalid-build correction messages."
+    },
+    {
+      "criterion": "3.3.4",
+      "level": "AA",
+      "status": "not applicable",
+      "evidence": "No legal or financial transaction or persistent user-data deletion."
+    },
+    {
+      "criterion": "3.3.5",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Manual criterion-specific review of all routes and complete interactions remains pending."
+    },
+    {
+      "criterion": "3.3.6",
+      "level": "AAA",
+      "status": "pending",
+      "evidence": "Review reset confirmation/undo and accidental calculator changes."
+    },
+    {
+      "criterion": "3.3.7",
+      "level": "A",
+      "status": "not applicable",
+      "evidence": "No multi-step repeated-entry process."
+    },
+    {
+      "criterion": "3.3.8",
+      "level": "AA",
+      "status": "not applicable",
+      "evidence": "No login or authentication flow."
+    },
+    {
+      "criterion": "3.3.9",
+      "level": "AAA",
+      "status": "not applicable",
+      "evidence": "No login or authentication flow."
+    },
+    {
+      "criterion": "4.1.2",
+      "level": "A",
+      "status": "pending",
+      "evidence": "Check accessible names, native control roles and current selection/rank values with a screen reader."
+    },
+    {
+      "criterion": "4.1.3",
+      "level": "AA",
+      "status": "pending",
+      "evidence": "Check search-result and talent-update announcements with a screen reader; manual testing pending."
+    }
+  ]
+}

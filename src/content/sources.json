@@ -1,0 +1,58 @@
+{
+  "announcement": {
+    "title": "Blizzard: Forever announcement and editions",
+    "url": "https://news.blizzard.com/en-gb/article/24302093/carve-a-new-path-with-world-of-warcraft-forever"
+  },
+  "roadmap": {
+    "title": "Blizzard: What’s Next panel recap",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/24303862/world-of-warcraft-forever-whats-next"
+  },
+  "systems": {
+    "title": "Blizzard: systems deep dive",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/24303313"
+  },
+  "world": {
+    "title": "Blizzard: Found Photos panel recap",
+    "url": "https://worldofwarcraft.blizzard.com/en-gb/news/24304071/world-of-warcraft-forever-found-photos-panel-recap"
+  },
+  "beta": {
+    "title": "Blizzard: beta access and testing",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/24304160/"
+  },
+  "skyborne": {
+    "title": "Blizzard: meet the Skyborne",
+    "url": "https://worldofwarcraft.blizzard.com/en-gb/news/24302071"
+  },
+  "roster": {
+    "title": "Blizzard: races and classes",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/24304075/"
+  },
+  "hunter-druid": {
+    "title": "Blizzard: Hunter and Druid class changes",
+    "url": "https://worldofwarcraft.blizzard.com/en-gb/news/24301515/world-of-warcraft-forever-class-deep-dives-hunter-and-druid"
+  },
+  "priest-warrior": {
+    "title": "Blizzard: Priest and Warrior class changes",
+    "url": "https://news.blizzard.com/en-gb/article/24301514/world-of-warcraft-forever-class-deep-dives-priest-and-warrior"
+  },
+  "legacy": {
+    "title": "Blizzard: Legacy system",
+    "url": "https://news.blizzard.com/en-us/article/24307383/get-to-know-the-world-of-warcraft-forever-legacy-system"
+  },
+  "talents": {
+    "title": "WoW Forever: maintained beta talent dataset, CC BY 4.0 compilation",
+    "url": "https://wow-forever.gg/developers/"
+  },
+  "quest-database": {
+    "url": "https://wow-forever.gg/db/quests/",
+    "title": "WoW Forever: maintained quest database"
+  },
+  "zephras-quests": {
+    "url": "https://wowforever.wclbox.com/en/renwu/zephras-isle",
+    "title": "WoW Forever database: Zephras quest records and maps"
+  },
+  "quest-help": {
+    "url": "https://foreveratlas.com/quests",
+    "title": "ForeverAtlas: selected quest walkthroughs and troubleshooting"
+  }
+}

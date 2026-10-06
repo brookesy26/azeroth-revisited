@@ -1,0 +1,72 @@
+{
+  "sha": "312a6e61bab69370c65ccc0a08f1075d62196294",
+  "assets": [
+    {
+      "file": "eastern-kingdoms.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/Glues/LOADINGSCREENS/LOADSCREENEASTERNKINGDOM.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    },
+    {
+      "file": "molten-core.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/Glues/LOADINGSCREENS/LoadScreenMoltenCore.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    },
+    {
+      "file": "blackrock.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/Glues/LOADINGSCREENS/LoadScreenBlackrockDepths.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    },
+    {
+      "file": "hunter.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/ICONS/ClassIcon_Hunter.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    },
+    {
+      "file": "warrior.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/ICONS/ClassIcon_Warrior.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    },
+    {
+      "file": "paladin.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/ICONS/ClassIcon_Paladin.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    },
+    {
+      "file": "rogue.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/ICONS/ClassIcon_Rogue.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    },
+    {
+      "file": "shaman.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/ICONS/ClassIcon_Shaman.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    },
+    {
+      "file": "priest.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/ICONS/ClassIcon_Priest.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    },
+    {
+      "file": "warlock.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/ICONS/ClassIcon_Warlock.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    },
+    {
+      "file": "druid.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/ICONS/ClassIcon_Druid.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    },
+    {
+      "file": "mage.webp",
+      "source": "https://cdn.jsdelivr.net/gh/Gethe/wow-ui-textures@312a6e61bab69370c65ccc0a08f1075d62196294/ICONS/ClassIcon_Mage.PNG",
+      "credit": "World of Warcraft artwork \u00c2\u00a9 Blizzard Entertainment; mirrored by Gethe/wow-ui-textures."
+    }
+  ],
+  "talentIcons": {
+    "files": "public/images/talents/{icon_id}.webp",
+    "sourceTemplate": "https://assets.wow-forever.gg/icons/{icon_id}.png",
+    "mapping": "icon_id in the maintained talent dataset",
+    "processing": "Prepared locally as 56 by 56 WebP assets.",
+    "credit": "World of Warcraft game icons belong to Blizzard Entertainment; served by the WoW Forever community provider. Compilation licence does not transfer Blizzard artwork rights."
+  }
+}

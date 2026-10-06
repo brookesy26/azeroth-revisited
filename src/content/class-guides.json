@@ -1,0 +1,432 @@
+{
+  "updated": "2026-10-06",
+  "build": "1.60.1.70235",
+  "status": "Beta reference; descriptions are not evidence of in-game performance.",
+  "comparisonNote": "Official class articles describe changes from original WoW. The maintained comparison database uses Classic Era 1.15.9.70003, with Season of Discovery-era tuning, rather than an untouched Vanilla client. Database-only differences below are labelled accordingly. Abilities beyond level 30 are future planning, outside the current beta cap.",
+  "attribution": "Talent descriptions adapted from the WoW Forever maintained dataset, CC BY 4.0. World of Warcraft game content belongs to Blizzard Entertainment.",
+  "classes": [
+    {
+      "slug": "warrior",
+      "summary": "Rage, stance switching and shield play receive practical changes without replacing Arms, Fury and Protection.",
+      "changes": [
+        {
+          "title": "Rage and mitigation",
+          "body": "Blizzard says armour and absorbs no longer suppress Rage from incoming damage. Outgoing Rage is normalised around weapon speed. Beta Rage bugs were acknowledged in the class article.",
+          "evidence": "Official class article"
+        },
+        {
+          "title": "Stance switching and recovery",
+          "body": "Tactical Mastery becomes baseline at level 14, retaining 10 Rage. Victory Rush arrives at level 20, with a heal following a qualifying kill.",
+          "evidence": "Official class article"
+        },
+        {
+          "title": "A shield changes your options",
+          "body": "Thunder Clap can be used in Defensive Stance. The Vanguard talent enables Charge in that stance.",
+          "evidence": "Official class article and maintained talent dataset"
+        }
+      ],
+      "treeFocus": [
+        {
+          "tree": "Arms",
+          "body": "Inspect Spearing Strike, Sweeping Strikes and Mortal Strike rather than assuming your old weapon-specialisation path still applies."
+        },
+        {
+          "tree": "Fury",
+          "body": "Raging Blows makes Whirlwind include an off-hand strike and lowers Cleave's Rage cost. This is a specific dual-wield interaction, not proof that dual wield is always stronger."
+        },
+        {
+          "tree": "Protection",
+          "body": "Vanguard changes engagement options. Shield Slam remains the deep-tree choice; check its prerequisites before planning a tank allocation."
+        }
+      ],
+      "fromVanilla": "Rebuild stance-switching binds around baseline Tactical Mastery. Discuss absorbs with your healer using the updated Rage rules, then test recovery and resource flow on ordinary enemies.",
+      "fromRetail": "Read the Forever versions of familiar names before copying keybind priorities. Spend points across the three Classic-style trees; this page is a transition guide into Forever, not a Retail rotation guide.",
+      "practice": [
+        "Use Charge, change stance and observe retained Rage.",
+        "Compare incoming Rage while shielded during a controlled pull.",
+        "Try Victory Rush after a qualifying kill before increasing pull size."
+      ],
+      "sources": [
+        "https://news.blizzard.com/en-gb/article/24301514/world-of-warcraft-forever-class-deep-dives-priest-and-warrior",
+        "https://wow-forever.gg/classes/warrior/",
+        "https://wow-forever.gg/developers/"
+      ]
+    },
+    {
+      "slug": "paladin",
+      "summary": "Holy, Protection and Retribution keep mana, blessings and seals, with new interactions to inspect before reusing an old build.",
+      "changes": [
+        {
+          "title": "Earlier tools to check",
+          "body": "The beta spellbook lists Holy Strike from level 6 and Seal of Fury from level 10. The Era comparison marks these entries as additions; this is a database comparison, not a tested rotation.",
+          "evidence": "Maintained beta spellbook and Era comparison"
+        },
+        {
+          "title": "Longer blessings",
+          "body": "The maintained comparison lists Blessing of Kings at level 20 as a former talent, with a 60-minute duration in Forever. Revisit your buff routine and trainer purchases.",
+          "evidence": "Maintained Era comparison"
+        },
+        {
+          "title": "Seal replacement has a talent interaction",
+          "body": "Twist of Light reduces Seal mana costs and grants an Echo when replacing a supported Seal with a different one. The next melee attack applies the replaced Seal's effects.",
+          "evidence": "Maintained talent dataset"
+        }
+      ],
+      "treeFocus": [
+        {
+          "tree": "Holy",
+          "body": "Holy Shock and Light's Vigil are distinct tree milestones. Light's Vigil modifies your next Holy Shock on its target; read the ally and enemy effects separately."
+        },
+        {
+          "tree": "Protection",
+          "body": "Inspect Improved Seal of Fury, Swift Judgement and Templar's Bulwark. Use the tooltip and point gate rather than assuming a familiar name has familiar mechanics."
+        },
+        {
+          "tree": "Retribution",
+          "body": "Compare Seal of Command, Sacred Arbiter and Twist of Light. Deep seal interactions are future planning beyond the level-30 beta budget."
+        }
+      ],
+      "fromVanilla": "Check blessings and your trainer before spending points on old buff talents. Relearn seal choices and mana costs from the current spellbook.",
+      "fromRetail": "Start with Forever's mana, seal and blessing toolkit. Do not assume that a Retail resource loop or an imported Retail build applies to these three talent trees.",
+      "practice": [
+        "Check your blessings' current durations.",
+        "Train Holy Strike and inspect its mana cost and cooldown.",
+        "Read Seal of Fury before offering to tank a group."
+      ],
+      "sources": [
+        "https://wow-forever.gg/classes/paladin/",
+        "https://wow-forever.gg/changes/paladin/",
+        "https://wow-forever.gg/developers/"
+      ]
+    },
+    {
+      "slug": "hunter",
+      "summary": "Pets, shots and traps remain central, but familiar cooldown relationships and pet assumptions need a fresh look.",
+      "changes": [
+        {
+          "title": "Aimed Shot and shared cooldowns",
+          "body": "Aimed Shot becomes baseline at level 20. It separates from Arcane Shot's cooldown and instead shares one with Multi-Shot.",
+          "evidence": "Official class article"
+        },
+        {
+          "title": "Traps during combat",
+          "body": "Traps can be placed in combat with a 30-second cooldown. Fire and frost trap groups have separate cooldowns.",
+          "evidence": "Official class article"
+        },
+        {
+          "title": "Pets and family identity",
+          "body": "Pets scale from Hunter equipment and gain unique family abilities. Foxes join the pet families.",
+          "evidence": "Official class article"
+        }
+      ],
+      "treeFocus": [
+        {
+          "tree": "Beast Mastery",
+          "body": "Compare Summon Hawk, Intimidation and Bestial Wrath. Check both your talent allocation and pet-family ability before planning utility."
+        },
+        {
+          "tree": "Marksmanship",
+          "body": "Lone Wolf increases attack damage while no pet is active. Sniper Shot modifies the range of subsequent shots. These are situational mechanics, not a recommendation to dismiss your pet."
+        },
+        {
+          "tree": "Survival",
+          "body": "Deterrence, Counterattack, Strider Kick and Lacerating Strikes create a different set of decisions from a shot-only plan. Inspect each ability before committing points."
+        }
+      ],
+      "fromVanilla": "Update your shot binds for the new shared cooldown. Test traps in combat and review family abilities before choosing a pet purely from an old damage ranking.",
+      "fromRetail": "Check Forever's mana resource and its own pet rules. Familiar talent names do not establish a Retail build or rotation; use this version's current ability ranks and tree gates.",
+      "practice": [
+        "Observe which shots share a cooldown.",
+        "Use a combat trap on a manageable enemy.",
+        "Read your pet's family ability and compare it with your intended activity."
+      ],
+      "sources": [
+        "https://news.blizzard.com/en-gb/article/24301515/world-of-warcraft-forever-class-deep-dives-hunter-and-druid",
+        "https://wow-forever.gg/classes/hunter/",
+        "https://wow-forever.gg/developers/"
+      ]
+    },
+    {
+      "slug": "rogue",
+      "summary": "Energy and combo-point play remain familiar, while new finishers, weapon access and deep-tree interactions change build planning.",
+      "changes": [
+        {
+          "title": "New Assassination entries",
+          "body": "The beta spellbook lists Mutilate as a talent ability available from level 30 and Venom as a level-40 talent entry. The latter is beyond the current beta cap.",
+          "evidence": "Maintained beta spellbook and Era comparison"
+        },
+        {
+          "title": "Hemorrhage's effect",
+          "body": "The Era comparison shows Forever Hemorrhage increasing the Rogue's Rupture damage by 15%, rather than the old limited-charge bonus to incoming Physical damage.",
+          "evidence": "Maintained Era comparison"
+        },
+        {
+          "title": "Expanded weapon access",
+          "body": "The current class page marks axes as new weapon access in Forever. Check trainers and weapon requirements before purchasing a replacement weapon.",
+          "evidence": "Maintained class spellbook"
+        }
+      ],
+      "treeFocus": [
+        {
+          "tree": "Assassination",
+          "body": "Compare Cold Blood, Mutilate and Venom. Read weapon requirements and energy costs before choosing your route through the tree."
+        },
+        {
+          "tree": "Combat",
+          "body": "Flawless Execution lowers Eviscerate's energy cost by 10. Compare its point gate with Blade Flurry and Adrenaline Rush."
+        },
+        {
+          "tree": "Subtlety",
+          "body": "Thousand Cuts links Rupture ticks to cheaper Hemorrhage or Backstab casts, with a stacking reduction. Plan around that interaction rather than an old raid debuff assumption."
+        }
+      ],
+      "fromVanilla": "Recheck Hemorrhage's purpose and your weapon choices. A familiar skill name may now support your own bleed damage instead of providing the remembered group effect.",
+      "fromRetail": "Use Assassination, Combat and Subtlety as the Forever tree names. Read this version's stealth, positioning and weapon restrictions before transferring a Retail ability sequence.",
+      "practice": [
+        "Check Backstab's weapon and positioning requirements.",
+        "Inspect your current combo-point and energy costs before adding a finisher bind.",
+        "Compare Mutilate's tooltip with the weapons you actually own."
+      ],
+      "sources": [
+        "https://wow-forever.gg/classes/rogue/",
+        "https://wow-forever.gg/changes/rogue/",
+        "https://wow-forever.gg/developers/"
+      ]
+    },
+    {
+      "slug": "priest",
+      "summary": "Race-exclusive tools become broader, while healing, shields and Shadow receive new tree choices.",
+      "changes": [
+        {
+          "title": "Less race-restricted utility",
+          "body": "Fear Ward and Devouring Plague become available to every Priest at level 20. Divine Spirit becomes baseline at level 30.",
+          "evidence": "Official class article"
+        },
+        {
+          "title": "Group healing and Shadow",
+          "body": "Prayer of Healing affects the target's party and pets. Shadow Word: Death is a baseline level-32 addition, outside the current beta cap.",
+          "evidence": "Official class article"
+        },
+        {
+          "title": "New healing milestones",
+          "body": "Penance joins Discipline; Binding Heal and Prayer of Mending appear in Holy. Their positions matter when planning a levelling healer.",
+          "evidence": "Official class article and maintained talent dataset"
+        }
+      ],
+      "treeFocus": [
+        {
+          "tree": "Discipline",
+          "body": "Soul Warding shortens Power Word: Shield's cooldown and reduces its mana cost. Penance can damage an enemy or heal an ally; it is a channel, not an instant heal."
+        },
+        {
+          "tree": "Holy",
+          "body": "Compare Binding Heal with your direct heals. Prayer of Mending is a deep-tree option and cannot be reached with the current level-30 beta point budget."
+        },
+        {
+          "tree": "Shadow",
+          "body": "Review Mind Flay, Vampiric Embrace and Shadowform. Do not assume the duration, mana behaviour or prerequisites match a remembered Vanilla build."
+        }
+      ],
+      "fromVanilla": "Choose a race after reading its current two Priest racial spells. Fear Ward and Devouring Plague are no longer reasons to assume that only one race can supply them.",
+      "fromRetail": "Treat Forever Discipline as its own toolkit. Penance appearing in a tree does not establish Retail's complete healing model; inspect the current shields, spell ranks and mana costs.",
+      "practice": [
+        "Train and bind Fear Ward at the appropriate level.",
+        "Check which party Prayer of Healing will target.",
+        "Test Penance on an ally and an enemy after unlocking it."
+      ],
+      "sources": [
+        "https://news.blizzard.com/en-gb/article/24301514/world-of-warcraft-forever-class-deep-dives-priest-and-warrior",
+        "https://wow-forever.gg/classes/priest/",
+        "https://wow-forever.gg/developers/"
+      ]
+    },
+    {
+      "slug": "shaman",
+      "summary": "Totems and mana still define the class, with practical management abilities and new elemental and healing milestones.",
+      "changes": [
+        {
+          "title": "Totem management entries",
+          "body": "The beta spellbook lists Call of the Elements and Totemic Recall at level 20. Read their current tooltips and rebuild totem binds around available abilities.",
+          "evidence": "Maintained beta spellbook and Era comparison"
+        },
+        {
+          "title": "Later spell options",
+          "body": "Lava Burst and Riptide appear as level-40 talent abilities in the maintained dataset. They are future planning beyond the current level-30 beta cap.",
+          "evidence": "Maintained beta spellbook and talent dataset"
+        },
+        {
+          "title": "Totem duration and reach",
+          "body": "The Era comparison shows several resistance totems lasting five minutes and reaching party and raid members within 30 yards. Check each totem rather than applying that rule to every effect.",
+          "evidence": "Maintained Era comparison"
+        }
+      ],
+      "treeFocus": [
+        {
+          "tree": "Elemental",
+          "body": "Earthbound lets Earthbind Totem immobilise nearby targets when placed. Lava Burst is the deep-tree damage option in this dataset."
+        },
+        {
+          "tree": "Enhancement",
+          "body": "Inspect Stormstrike, Spirit Weapons and Rage of the Farseer. The latter supplies a temporary attack-speed increase; verify weapon requirements separately."
+        },
+        {
+          "tree": "Restoration",
+          "body": "Compare Water Shield, Mana Tide Totem and Nature's Swiftness before planning towards Riptide. Mana support and emergency healing are different decisions."
+        }
+      ],
+      "fromVanilla": "Audit totem duration, range and group coverage individually. Your remembered placement routine may need fewer refreshes, but positioning and the selected totem still matter.",
+      "fromRetail": "Read Forever's own totem and mana rules. Lava Burst and Riptide are talent milestones here; their names do not mean your full Retail kit is available from the start.",
+      "practice": [
+        "Check which totems the level-20 management tools use.",
+        "Read a resistance totem's range and group coverage.",
+        "Test Earthbind placement before relying on its talented immobilise."
+      ],
+      "sources": [
+        "https://wow-forever.gg/classes/shaman/",
+        "https://wow-forever.gg/changes/shaman/",
+        "https://wow-forever.gg/developers/"
+      ]
+    },
+    {
+      "slug": "mage",
+      "summary": "Arcane, Fire and Frost remain mana-based trees, with new spell access and proc interactions to learn.",
+      "changes": [
+        {
+          "title": "Earlier talent spell choices",
+          "body": "The maintained spellbook lists Arcane Blast and Ice Lance as talent abilities available from level 20. Check the appropriate tree rather than assuming they are baseline.",
+          "evidence": "Maintained beta spellbook and Era comparison"
+        },
+        {
+          "title": "Later spell and travel entries",
+          "body": "Frostfire Bolt appears from level 40 and Teleport: Dalaran from level 50. Both are beyond the current level-30 beta cap.",
+          "evidence": "Maintained beta spellbook"
+        },
+        {
+          "title": "Proc-driven talent interactions",
+          "body": "Missile Barrage alters Arcane Missiles after a proc. Heating Up stacks a cast-time reduction for the next Pyroblast after eligible critical strikes.",
+          "evidence": "Maintained talent dataset"
+        }
+      ],
+      "treeFocus": [
+        {
+          "tree": "Arcane",
+          "body": "Missile Barrage reduces channel duration and removes the mana cost of the next Arcane Missiles when its proc occurs. Read which spells can trigger it."
+        },
+        {
+          "tree": "Fire",
+          "body": "Heating Up uses eligible direct critical strikes and stacks up to three times. It is not a guarantee that every critical hit produces an instant Pyroblast."
+        },
+        {
+          "tree": "Frost",
+          "body": "Compare Ice Lance, Ice Block, Cold Snap and Ice Barrier. Their tree gates make defensive access part of your point-allocation decision."
+        }
+      ],
+      "fromVanilla": "Check where new spells enter the trees before rebuilding a familiar frost levelling plan. Spell ranks, mana and the defensive path still deserve deliberate choices.",
+      "fromRetail": "Read the exact Forever proc text. Heating Up and Arcane Blast may sound familiar, but the current tree descriptions determine stacks, costs and triggers in this version.",
+      "practice": [
+        "Inspect the point gate for Arcane Blast or Ice Lance.",
+        "Read the eligible triggers for your chosen proc talent.",
+        "Plan an escape before experimenting with a larger pull."
+      ],
+      "sources": [
+        "https://wow-forever.gg/classes/mage/",
+        "https://wow-forever.gg/changes/mage/",
+        "https://wow-forever.gg/developers/"
+      ]
+    },
+    {
+      "slug": "warlock",
+      "summary": "Demons, damage-over-time effects and mana remain central, while Bane terminology and deep talent interactions change planning.",
+      "changes": [
+        {
+          "title": "Read Bane and Curse restrictions",
+          "body": "The comparison names the periodic effect Bane of Agony and its tooltip restricts the target to one Bane per Warlock. Read the separate Curse tooltips before assuming the old exclusivity rules.",
+          "evidence": "Maintained Era comparison"
+        },
+        {
+          "title": "New deep-tree spell entries",
+          "body": "Incinerate and Wrack appear as level-40 talent abilities. They are present in beta data but outside the current playable level cap.",
+          "evidence": "Maintained beta spellbook and talent dataset"
+        },
+        {
+          "title": "Sacrifice and summoning interact differently",
+          "body": "Demonic Pact permits Demonic Sacrifice to persist when summoning a different Demon. Resummoning the sacrificed pet still cancels that effect.",
+          "evidence": "Maintained talent dataset"
+        }
+      ],
+      "treeFocus": [
+        {
+          "tree": "Affliction",
+          "body": "Wrack adds a short Shadow effect that increases damage from your other Shadow damage-over-time effects on the target. Inspect its duration before planning refreshes."
+        },
+        {
+          "tree": "Demonology",
+          "body": "Compare Demonic Sacrifice, Soul Link and Demonic Pact. The selected demon and whether it was sacrificed are relevant to the current tooltip interactions."
+        },
+        {
+          "tree": "Destruction",
+          "body": "Compare Conflagrate, Bane of Havoc and Incinerate. Check prerequisites and spell availability rather than copying a Retail Destruction bar."
+        }
+      ],
+      "fromVanilla": "Re-read effect categories and pet-related talents. Do not import an old curse assignment or sacrifice build until you understand the new tooltip restrictions.",
+      "fromRetail": "Use Forever's own mana, demon and effect rules. Familiar spells in the talent dataset do not establish a Retail resource system or rotation in this version.",
+      "practice": [
+        "Read your Bane and Curse target restrictions.",
+        "Check your demon's actual abilities before a group pull.",
+        "Plan early talents separately from level-40 and deeper options."
+      ],
+      "sources": [
+        "https://wow-forever.gg/classes/warlock/",
+        "https://wow-forever.gg/changes/warlock/",
+        "https://wow-forever.gg/developers/"
+      ]
+    },
+    {
+      "slug": "druid",
+      "summary": "Balance, Feral Combat and Restoration stay connected through forms, with more practical flexibility and revised healing choices.",
+      "changes": [
+        {
+          "title": "More actions in form",
+          "body": "Blizzard expands form-compatible consumables, interactions and racial abilities. Nature's Grasp and Omen of Clarity become baseline.",
+          "evidence": "Official class article"
+        },
+        {
+          "title": "An ordinary resurrection",
+          "body": "Revive adds an out-of-combat resurrection at level 12. It is separate from Rebirth, so inspect both cooldowns and intended uses.",
+          "evidence": "Official class article and maintained spellbook"
+        },
+        {
+          "title": "Reworked Restoration milestones",
+          "body": "Swiftmend moves to the 16-point milestone without consuming the target's heal-over-time effect. Wild Growth joins as a deep talent.",
+          "evidence": "Official class article and maintained talent dataset"
+        }
+      ],
+      "treeFocus": [
+        {
+          "tree": "Balance",
+          "body": "Compare Insect Swarm, Nature's Grace and Moonkin Form. Read the current point route and baseline spellbook before reusing a Vanilla allocation."
+        },
+        {
+          "tree": "Feral Combat",
+          "body": "Bear and Cat decisions share Feral Combat. Inspect Feral Charge, Primal Bite and Berserk with your intended form in mind; this is not a four-specialisation Retail layout."
+        },
+        {
+          "tree": "Restoration",
+          "body": "Wild Growth heals the target and their party over seven seconds, with stronger early ticks. It is a future deep-tree choice beyond the beta's level-30 budget."
+        }
+      ],
+      "fromVanilla": "Check which actions work without leaving form and remove obsolete baseline-buff talent assumptions. Add Revive to your out-of-combat recovery toolkit while keeping Rebirth distinct.",
+      "fromRetail": "Plan around the three Forever trees, including shared Feral Combat. Inspect party targeting and individual spell text instead of importing Retail's Feral, Guardian or healing assumptions.",
+      "practice": [
+        "Check a consumable and interaction while in form.",
+        "Ask a trainer whether Revive is currently available.",
+        "Read Swiftmend's tooltip before deciding which healing effects to preserve."
+      ],
+      "sources": [
+        "https://news.blizzard.com/en-gb/article/24301515/world-of-warcraft-forever-class-deep-dives-hunter-and-druid",
+        "https://wow-forever.gg/classes/druid/",
+        "https://wow-forever.gg/developers/"
+      ]
+    }
+  ]
+}
