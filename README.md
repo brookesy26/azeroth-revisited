@@ -32,7 +32,7 @@ Scheduled published refreshes request a Cloudflare Pages build every three hours
 
 ## Deployment
 
-The app uses Next.js App Router with `output: 'export'`. Cloudflare Pages can host the `out/` directory using `npm run build` and Node 24. It needs no running Next.js server. Repository creation, account connection and deployment are separate actions; this README does not claim they are complete.
+The app uses Next.js App Router with `output: 'export'`. The production site is live at [azeroth-revisited.pages.dev](https://azeroth-revisited.pages.dev). Cloudflare Pages builds the `out/` directory using `npm run content:sync && npm run assets:talents && npm test && npm run build` and Node 24.16.0. Every publish validates refreshed source snapshots with the unit tests before exporting. It needs no running Next.js server. See [deployment evidence](docs/deployment-evidence.md) for the verified release and automation boundaries.
 
 ## Accessibility and credits
 
