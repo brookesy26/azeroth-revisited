@@ -6,7 +6,9 @@ import path from "node:path";
 // Run after build and while the static preview is listening on port 3100.
 // Screenshots and raw measurements are review material, not a conformance certificate.
 const baseURL = process.env.REVIEW_URL || "http://localhost:3100";
-const destination = path.resolve(process.env.REVIEW_DESTINATION || "test-results/visual-review");
+const destination = path.resolve(
+  process.env.REVIEW_DESTINATION || "artifacts/qa/visual-review",
+);
 await mkdir(destination, { recursive: true });
 async function discover(directory, prefix = "") {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -25,7 +27,9 @@ async function discover(directory, prefix = "") {
   return result;
 }
 const discovered = [...new Set(await discover("out"))].sort();
-const routes = process.env.REVIEW_ROUTES ? process.env.REVIEW_ROUTES.split(",") : discovered;
+const routes = process.env.REVIEW_ROUTES
+  ? process.env.REVIEW_ROUTES.split(",")
+  : discovered;
 if (!routes.length)
   throw new Error("No exported routes found. Run npm run build first.");
 const browser = await chromium.launch({
@@ -195,7 +199,10 @@ try {
   await page.goto(new URL(`/classes/warrior/#talents=${hash}`, baseURL).href, {
     waitUntil: "networkidle",
   });
-  await page.locator(".talent-calculator").getByRole("alert").scrollIntoViewIfNeeded();
+  await page
+    .locator(".talent-calculator")
+    .getByRole("alert")
+    .scrollIntoViewIfNeeded();
   await page.screenshot({
     path: path.join(destination, "warrior-invalid-shared-build.png"),
     fullPage: true,

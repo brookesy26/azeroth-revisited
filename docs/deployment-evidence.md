@@ -9,12 +9,14 @@ Verified on 6 October 2026.
 - Native GitHub integration is connected to this repository. No Cloudflare API token is stored in GitHub Actions.
 - Build command: `npm run content:sync && npm run assets:talents && npm run build`
 - Output directory: `out`
-- Node version: `24`, configured for production and preview builds.
+- Node version: `24.16.0`, configured for production and preview builds.
 - Next.js exports static pages. This deployment does not create Pages Functions, databases, paid Workers services, or a paid domain.
 
-## Initial status
+## Verified preview
 
-The project and native GitHub connection were created successfully through the Cloudflare API. Automatic deployments are temporarily disabled until the implementation has passed verification. The production address is reserved; creation of the project alone does not mean that a site is live.
+The project and native GitHub connection were created successfully through the Cloudflare API. Preview builds are enabled for `codex/*` branches. Production builds remain disabled pending merge. The production address is reserved; creation of the project alone does not mean that production is live.
+
+Native preview https://fe7e826e.azeroth-revisited.pages.dev completed successfully for commit `2566358ff6c8c2b95176d1bc484eae65bb1600df`. Cloudflare's Linux build updated both `talents.json` and `news.json`, ran talent asset preparation, exported Next.js and uploaded 529 static files. No Functions directory was present. Every one of the 26 sitemap routes returned HTTP 200, as did robots.txt, sitemap.xml and sampled class and talent icons. Next.js navigation payloads returned HTTP 200 with a text/plain content type. An unknown route returned the custom missing-page content with HTTP 404. CSP, HSTS, framing restrictions, MIME sniffing protection, referrer and permissions policies were present in responses.
 
 ## Deployment flow
 
@@ -49,6 +51,6 @@ Use Cloudflare Pages deployment history to promote an earlier successful product
 
 [Cloudflare rollback instructions](https://developers.cloudflare.com/pages/configuration/rollbacks/)
 
-## Build verification still required
+## Build environment
 
-Project creation confirms the GitHub source, output directory, build command and Node override. The first native preview must still confirm successful dependency installation, source-data refreshes in Cloudflare's network environment, static export and public page responses. Outbound provider requests can fail independently; the published source status must accurately show the retained snapshot when this happens.
+The initial native preview confirms dependency installation, source-data refreshes in Cloudflare's network environment, static export and public page responses. Outbound provider requests can fail independently; the published source status must accurately show the retained snapshot when this happens. Cloudflare resolved the initial `24` Node override to 24.13.1. Some development dependencies reported engine warnings requiring a newer minor release; the preview build nevertheless completed successfully. The Node override was subsequently pinned to 24.16.0 for both preview and production to match the local runtime and dependency requirements.

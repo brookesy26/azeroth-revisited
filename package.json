@@ -46,7 +46,7 @@
     "wrangler": "^4.147.0"
   },
   "engines": {
-    "node": ">=24 <25"
+    "node": ">=24.15 <25"
   },
   "overrides": {
     "braces": "3.0.3"

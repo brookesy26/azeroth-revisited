@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-navigation: 46.25rem;
+  --breakpoint-wide: 62.5rem;
+}
+
 .site {
   width: 100%;
 }
@@ -16,6 +21,16 @@
   --wow-muted: #d4c4b0;
   --wow-orange: #ffb35d;
   --wow-border: #674a2e;
+  --wow-font-body: Arial, sans-serif;
+  --wow-font-heading: Georgia, serif;
+  --wow-space-small: 8px;
+  --wow-space-medium: 16px;
+  --wow-space-large: 24px;
+  --wow-sidebar-width: 190px;
+  --wow-reading-width: 850px;
+  --wow-border-width: 1px;
+  --wow-selection-shadow: inset 3px 0 #ed9b48;
+  --wow-motion-duration: 150ms;
   position: relative;
   color: var(--wow-text);
   background:
@@ -37,7 +52,7 @@
 .site .wow-sidebar {
   position: absolute;
   inset: 0 auto 0 0;
-  width: 190px;
+  width: var(--wow-sidebar-width);
   background: linear-gradient(90deg, #181310, #211811);
   border-right: 2px solid var(--wow-border);
   padding: 32px 15px;
@@ -113,7 +128,7 @@
   letter-spacing: 2px;
 }
 .site .wow-main {
-  margin-left: 190px;
+  margin-left: var(--wow-sidebar-width);
 }
 .site .wow-top {
   display: flex;

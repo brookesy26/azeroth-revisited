@@ -7,8 +7,11 @@ import {
   getClasses,
   getTalents,
   getSource,
+  getClassGuide,
+  getClassGuideContext,
 } from "@/lib/content/repository";
 import { TalentCalculator } from "@/features/talents/talent-calculator";
+import { ClassGuideDetail } from "@/components/organisms/class-field-guide";
 export const dynamicParams = false;
 export function generateStaticParams() {
   return getClasses().map((item) => ({ slug: item.slug }));
@@ -19,9 +22,16 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const item = getClass((await params).slug);
+  if (!item) notFound();
   return {
-    title: `${item?.name} guide & talents`,
-    description: `Explore ${item?.name} talent trees in WoW Forever, with current beta data and returning-player guidance.`,
+    title: `${item.name} guide & talents`,
+    description: `Explore ${item.name} talent trees in WoW Forever, with current beta data and returning-player guidance.`,
+    alternates: { canonical: `/classes/${item.slug}/` },
+    openGraph: {
+      title: `${item.name} — Forever guide & talents`,
+      description: getClassGuide(item.slug)?.summary,
+      images: ["/images/blackrock.webp"],
+    },
   };
 }
 const roles: Record<string, string> = {
@@ -51,6 +61,8 @@ export default async function ClassPage({
   const item = getClass((await params).slug);
   if (!item) notFound();
   const data = getTalents();
+  const guide = getClassGuide(item.slug);
+  const guideContext = getClassGuideContext();
   const official = ["hunter", "druid"].includes(item.slug)
     ? getSource("hunter-druid")
     : ["priest", "warrior"].includes(item.slug)
@@ -108,6 +120,14 @@ export default async function ClassPage({
           </Link>
         </div>
       </section>
+      {guide && (
+        <ClassGuideDetail
+          guide={guide}
+          comparisonNote={guideContext.comparisonNote}
+          updated={guideContext.updated}
+          build={guideContext.build}
+        />
+      )}
       <TalentCalculator
         cls={item}
         build={data.build}

@@ -12,10 +12,16 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const guide = getGuide((await params).slug);
+  if (!guide) notFound();
   return {
-    title: guide?.title,
-    description: guide?.description,
-    alternates: { canonical: `/${guide?.slug}/` },
+    title: guide.title,
+    description: guide.description,
+    alternates: { canonical: `/${guide.slug}/` },
+    openGraph: {
+      title: guide.title,
+      description: guide.description,
+      images: ["/images/blackrock.webp"],
+    },
   };
 }
 export default async function Page({

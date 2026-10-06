@@ -38,7 +38,7 @@ body.site {
   color: #ffd59a;
   background: linear-gradient(90deg, #57331b, #2a1c13);
   border-color: #77502d;
-  box-shadow: inset 3px 0 #ed9b48;
+  box-shadow: var(--wow-selection-shadow);
 }
 .site .wow-sidebar nav a:hover,
 .site .navigation-drawer nav a:hover {
@@ -197,7 +197,7 @@ body.site {
 .site .article-section {
   margin: 30px 0;
   scroll-margin-top: 24px;
-  max-width: 850px;
+  max-width: var(--wow-reading-width);
 }
 .site .article-section p,
 .site .article-section li {
@@ -444,4 +444,18 @@ body.site {
 }
 .site nav[aria-label="Breadcrumb"] a {
   display: inline;
+}
+
+.site .evidence-note {
+  font-size: 0.875rem;
+  color: var(--wow-muted);
+  margin: 0.5rem 0 1.5rem;
+}
+.site .comparison-note {
+  border: 1px solid var(--wow-border);
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+.site nav[aria-label="Breadcrumb"] a {
+  text-decoration: underline;
 }

@@ -71,3 +71,33 @@ export const talentSchema = z.object({
 export type TalentDataset = z.infer<typeof talentSchema>;
 export type TalentClass = TalentDataset["classes"][number];
 export type Talent = TalentClass["trees"][number]["talents"][number];
+export const classGuidesSchema = z.object({
+  updated: z.string(),
+  build: z.string(),
+  status: z.string(),
+  comparisonNote: z.string(),
+  attribution: z.string(),
+  classes: z
+    .array(
+      z.object({
+        slug: z.string(),
+        summary: z.string(),
+        changes: z.array(
+          z.object({
+            title: z.string(),
+            body: z.string(),
+            evidence: z.string(),
+          }),
+        ),
+        treeFocus: z.array(z.object({ tree: z.string(), body: z.string() })),
+        fromVanilla: z.string(),
+        fromRetail: z.string(),
+        practice: z.array(z.string()),
+        sources: z.array(z.url()),
+      }),
+    )
+    .length(9),
+});
+export type ClassFieldGuide = z.infer<
+  typeof classGuidesSchema
+>["classes"][number];

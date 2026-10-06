@@ -158,19 +158,19 @@
       "criterion": "1.4.10",
       "level": "AA",
       "status": "pending",
-      "evidence": "Check 320 CSS-pixel viewport and 400% zoom; talent trees may require essential two-dimensional layout."
+      "evidence": "All 28 exported routes showed no page overflow at 640 and 320 CSS pixels, modelling 200%/400% reflow on a 1280px layout. Actual browser zoom and complete visual content-loss inspection remain pending. Evidence artifacts/qa/accessibility-review.json."
     },
     {
       "criterion": "1.4.11",
       "level": "AA",
       "status": "pending",
-      "evidence": "Measure controls, borders and focus indicators."
+      "evidence": "Forced-colors mode emulated on home, Warrior and Retail-transition routes: controls retained geometry and no page overflow. Actual nontext contrast measurements and manual control review remain pending."
     },
     {
       "criterion": "1.4.12",
       "level": "AA",
       "status": "pending",
-      "evidence": "Override line/paragraph/letter/word spacing and confirm no content loss."
+      "evidence": "All 28 routes tested with 1.5 line height, 2em paragraph spacing, .12em letter and .16em word spacing: no page overflow or hidden/clipped text containers detected. Three example screenshots saved. Manual full-text-loss inspection remains pending. Evidence artifacts/qa/accessibility-review.json."
     },
     {
       "criterion": "1.4.13",
@@ -182,13 +182,13 @@
       "criterion": "2.1.1",
       "level": "A",
       "status": "pending",
-      "evidence": "Complete navigation, search, calculator, reset and shared-build import with keyboard."
+      "evidence": "Actual keyboard events verified skip link, mobile menu, search result activation and talent allocation/refund. Full share/import/reset and all-route keyboard traversal remain pending. Evidence artifacts/qa/accessibility-review.json."
     },
     {
       "criterion": "2.1.2",
       "level": "A",
-      "status": "pending",
-      "evidence": "Check native mobile dialog Escape, focus trap and focus return."
+      "status": "tested",
+      "evidence": "Shared mobile native dialog tested through sixteen Tab events: background controls not reachable; Escape closes and restores opener. Keyboard search and talent allocation/refund also completed without a trap. Browser chrome remains reachable. Evidence artifacts/qa/accessibility-review.json."
     },
     {
       "criterion": "2.1.3",
@@ -254,13 +254,13 @@
       "criterion": "2.3.3",
       "level": "AAA",
       "status": "pending",
-      "evidence": "Check reduced-motion preference and interaction animations."
+      "evidence": "Reduced-motion preference emulated on home, Warrior and Retail-transition routes: zero running animations observed. Complete interaction-animation review remains pending. Evidence artifacts/qa/accessibility-review.json."
     },
     {
       "criterion": "2.4.1",
       "level": "A",
-      "status": "pending",
-      "evidence": "Check skip link bypasses repeated navigation and reaches the main region."
+      "status": "tested",
+      "evidence": "Shared skip link verified with actual Tab and Enter on homepage: first focused control and Enter focuses main. Evidence artifacts/qa/accessibility-review.json. Scope: shared shell component; no whole-site conformance claim."
     },
     {
       "criterion": "2.4.2",
@@ -296,7 +296,7 @@
       "criterion": "2.4.7",
       "level": "AA",
       "status": "pending",
-      "evidence": "Review visible focus on every interactive element."
+      "evidence": "Enabled talent refund button tested with keyboard: solid 3px visible outline; focused control within viewport. Every interactive focus style still needs review. Evidence artifacts/qa/accessibility-review.json."
     },
     {
       "criterion": "2.4.8",
@@ -320,7 +320,7 @@
       "criterion": "2.4.11",
       "level": "AA",
       "status": "pending",
-      "evidence": "Check sticky headers and overlays do not fully obscure focus."
+      "evidence": "Representative focused talent control fully within viewport; mobile dialog focus return checked. All-route sticky-header and overlay obstruction review remains pending."
     },
     {
       "criterion": "2.4.12",

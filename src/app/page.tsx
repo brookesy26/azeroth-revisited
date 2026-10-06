@@ -2,18 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "@/components/atoms/button-link";
 import { LaunchCountdown } from "@/features/countdown/launch-countdown";
-import { getNews, getClasses } from "@/lib/content/repository";
+import { getNews, getClasses, getFeaturedNews } from "@/lib/content/repository";
 export default function Home() {
   const news = getNews();
-  const featuredNews = news.items
-    .filter(
-      (item) => !/maintenance|service issue|temporary dialog/i.test(item.title),
-    )
-    .filter(
-      (item, index, items) =>
-        items.findIndex((other) => other.title === item.title) === index,
-    )
-    .slice(0, 2);
+  const featuredNews = getFeaturedNews();
   return (
     <>
       <section className="wow-hero">

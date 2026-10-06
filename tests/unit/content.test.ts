@@ -3,9 +3,30 @@ import guides from "@/content/guides.json";
 import news from "@/content/news.json";
 import sources from "@/content/sources.json";
 import talents from "@/content/talents.json";
-import { guideSchema, newsSchema, talentSchema } from "@/types/content";
+import classGuides from "@/content/class-guides.json";
+import {
+  guideSchema,
+  newsSchema,
+  talentSchema,
+  classGuidesSchema,
+} from "@/types/content";
 
 describe("published content integrity", () => {
+  it("covers every maintained class with dated evidence and version-specific advice", () => {
+    const content = classGuidesSchema.parse(classGuides);
+    expect(new Set(content.classes.map((item) => item.slug))).toEqual(
+      new Set(talents.classes.map((item) => item.slug)),
+    );
+    for (const guide of content.classes) {
+      expect(guide.changes.every((change) => change.evidence.length > 0)).toBe(
+        true,
+      );
+      expect(guide.fromRetail.length).toBeGreaterThan(0);
+      expect(
+        guide.sources.every((url) => new URL(url).protocol === "https:"),
+      ).toBe(true);
+    }
+  });
   it("has valid, distinct guide routes with resolvable citations", () => {
     const parsed = guides.map((guide) => guideSchema.parse(guide));
     expect(new Set(parsed.map((guide) => guide.slug)).size).toBe(parsed.length);

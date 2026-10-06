@@ -6,7 +6,10 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   reporter: [["list"], ["html", { open: "never" }]],
-  use: { baseURL: "http://localhost:3100", trace: "retain-on-failure" },
+  use: {
+    baseURL: process.env.PW_BASE_URL || "http://localhost:3100",
+    trace: "retain-on-failure",
+  },
   projects: [
     {
       name: "chromium",
@@ -18,13 +21,15 @@ export default defineConfig({
     { name: "firefox", use: { ...devices["Desktop Firefox"] } },
     { name: "webkit", use: { ...devices["Desktop Safari"] } },
   ],
-  webServer: {
-    command:
-      process.env.PW_STATIC === "1"
-        ? "npm run preview -- --port 3100"
-        : "npm run dev -- --port 3100",
-    url: "http://localhost:3100",
-    reuseExistingServer: !process.env.CI,
-    timeout: 120_000,
-  },
+  webServer: process.env.PW_BASE_URL
+    ? undefined
+    : {
+        command:
+          process.env.PW_STATIC === "1"
+            ? "npm run preview -- --port 3100"
+            : "npm run dev -- --port 3100",
+        url: "http://localhost:3100",
+        reuseExistingServer: !process.env.CI,
+        timeout: 120_000,
+      },
 });
