@@ -7,20 +7,28 @@ Verified on 6 October 2026.
 - Production address: https://azeroth-revisited.pages.dev
 - Production branch: `main`
 - Native GitHub integration is connected to this repository. No Cloudflare API token is stored in GitHub Actions.
-- Build command: `npm run content:sync && npm run assets:talents && npm run build`
+- Build command: `npm run content:sync && npm run assets:talents && npm test && npm run build`
 - Output directory: `out`
 - Node version: `24.16.0`, configured for production and preview builds.
 - Next.js exports static pages. This deployment does not create Pages Functions, databases, paid Workers services, or a paid domain.
 
-## Verified preview
+## Verified production
 
-The project and native GitHub connection were created successfully through the Cloudflare API. Preview builds are enabled for `codex/*` branches. Production builds remain disabled pending merge. The production address is reserved; creation of the project alone does not mean that production is live.
+The production site is live at https://azeroth-revisited.pages.dev. Deployment `844531e1-ac33-4120-b97a-fc5ed205a2eb` published merged-main commit `aa6ca59f38e65c4e4995b4b1aa9bbcf49dffbf3f` successfully on 6 October 2026 at 08:00 UTC (09:00 UK time). The restricted deploy hook triggered this initial build directly; this observation verifies the hook and Cloudflare publishing, separately from GitHub workflow execution.
+
+Production logs confirm Node 24.16.0, refreshed news and talent data, 357 talent icons with no asset failures, all 34 unit tests passing across four files, static export and successful publication. All 26 sitemap routes returned HTTP 200. Sampled class and talent images, robots.txt, sitemap.xml and Next.js navigation payloads returned HTTP 200 with the expected content types. An unknown route returned the custom missing-page content with HTTP 404. CSP, HSTS, framing restrictions, MIME sniffing protection, referrer and permissions policies are configured; production does not carry Cloudflare's preview noindex header.
+
+The subsequent [Verify site run 37433077193](https://github.com/brookesy26/azeroth-revisited/actions/runs/37433077193) completed successfully on `main`. Its completion automatically started [Refresh published content run 37433387460](https://github.com/brookesy26/azeroth-revisited/actions/runs/37433387460), which also succeeded using the encrypted repository hook secret. That workflow triggered production deployment `ec3ac50c-784c-4e1d-98c1-9b068f720b48` for the same commit. Cloudflare refreshed both source snapshots, passed all 34 unit tests and published successfully at 08:03:14 UTC (09:03 UK time). This verifies the GitHub workflow-to-hook-to-publication path independently of the initial direct trigger.
+
+## Verified previews
+
+The project and native GitHub source were created successfully through the Cloudflare API. Preview settings permit `codex/*` branches, and production builds are enabled. Native push webhook delivery was not observed during setup; the verified previews were explicitly requested through the Pages API. Production automation uses the restricted deploy-hook workflow so it does not depend on that unverified webhook.
 
 Native preview https://fe7e826e.azeroth-revisited.pages.dev completed successfully for commit `2566358ff6c8c2b95176d1bc484eae65bb1600df`. Cloudflare's Linux build updated both `talents.json` and `news.json`, ran talent asset preparation, exported Next.js and uploaded 529 static files. No Functions directory was present. Every one of the 26 sitemap routes returned HTTP 200, as did robots.txt, sitemap.xml and sampled class and talent icons. Next.js navigation payloads returned HTTP 200 with a text/plain content type. An unknown route returned the custom missing-page content with HTTP 404. CSP, HSTS, framing restrictions, MIME sniffing protection, referrer and permissions policies were present in responses.
 
 ## Deployment flow
 
-Once automatic deployments are enabled, pushes to `main` build and publish production. Other branches produce preview deployments. The build refreshes source data and prepares any missing talent icons before exporting the site. Failed source requests retain the last validated snapshot according to the content synchronisation script.
+The published-content workflow requests a production build after the Verify site workflow succeeds for this repository's `main` branch. Its scheduled and manual triggers can also request builds. Preview builds can be requested through Pages when needed. The build refreshes source data, prepares any missing talent icons and runs unit tests before exporting the site. Failed source requests retain the last validated snapshot according to the content synchronisation script.
 
 The site does not require a Cloudflare API token in its source code or repository. Local maintenance can use an existing Wrangler login. Credentials stay in the local Wrangler configuration and must never be copied into repository files.
 
@@ -30,7 +38,7 @@ The Pages deploy hook `scheduled-content-refresh` targets `main`. Its secret URL
 
 `.github/workflows/published-content-refresh.yml` invokes the hook every three hours at minute 17 UTC, and supports manual dispatch. The hook rebuilds production from `main`; the build runs the source synchronisation script before exporting. This allows newly published news to reach the public site without a manual merge. The separate snapshot-update workflow creates reviewed source-data pull requests.
 
-The schedule requests at most 248 builds in a 31-day month. Code pushes, previews and builds from other Pages projects on this account share the 500-build allowance. GitHub scheduled jobs can run late; this is a periodic refresh target, not a guarantee of instantaneous updates. The schedule activates after its workflow is merged to the default branch. The secret's presence was verified; the hook was not triggered during setup.
+The schedule requests at most 248 builds in a 31-day month. Code changes, previews and builds from other Pages projects on this account share the 500-build allowance. GitHub scheduled jobs can run late; this is a periodic refresh target, not a guarantee of instantaneous updates. The workflow is merged to the default branch and its secret is configured. Direct hook invocation and the automatic workflow-run path both produced successful production deployments. The first timer-driven execution has not yet occurred; it uses the same verified job and secret.
 
 [Cloudflare deploy-hook documentation](https://developers.cloudflare.com/pages/configuration/deploy-hooks/)
 

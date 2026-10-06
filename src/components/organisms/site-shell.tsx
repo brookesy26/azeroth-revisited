@@ -77,6 +77,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       </aside>
       <dialog
         ref={dialog}
+        aria-label="Site navigation"
         className="navigation-drawer"
         onClose={() => menu.current?.focus()}
       >

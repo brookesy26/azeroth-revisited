@@ -33,6 +33,7 @@ test("mobile navigation closes on Escape and restores the opener", async ({
   await opener.click();
   const drawer = page.getByRole("dialog");
   await expect(drawer).toBeVisible();
+  await expect(drawer).toHaveAccessibleName("Site navigation");
   await expect(
     drawer.getByRole("navigation", { name: "Main navigation" }),
   ).toBeVisible();

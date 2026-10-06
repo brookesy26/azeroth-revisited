@@ -4,7 +4,7 @@ CI installs dependencies, checks lint and TypeScript, runs unit tests, exports t
 
 The scheduled content workflow is configured to run daily and can be run manually. It refreshes news and community talent snapshots and proposes a pull request. Repository settings must allow GitHub Actions to create pull requests. Schedule timing is best-effort; the workflow is not proof of real-time updates. Review failed refreshes and stale timestamps.
 
-The separate published-content workflow calls a secret Cloudflare Pages build hook every three hours. Configure `CLOUDFLARE_PAGES_BUILD_HOOK` in repository secrets and use production build command `npm run content:sync && npm run assets:talents && npm run build`. Each successful refresh exports the updated data into the hosted site automatically. The hook response only proves the request was accepted; check Pages deployment status and visible timestamps to verify publication. Never print the hook URL in logs or commit it.
+The separate published-content workflow calls a secret Cloudflare Pages build hook every three hours. The repository secret `CLOUDFLARE_PAGES_BUILD_HOOK` is configured. The production build command is `npm run content:sync && npm run assets:talents && npm test && npm run build`. Each successful refresh validates the updated data with unit tests before exporting it into the hosted site automatically. The hook response only proves the request was accepted; check Pages deployment status and visible timestamps to verify publication. Never print the hook URL in logs or commit it.
 
 The stored secret is the restricted deployment-hook URL. No general Cloudflare API token or long-lived OAuth credential is saved in this repository's scheduled-refresh configuration. Creating the hook and storing its secret does not itself establish a successful published refresh.
 
@@ -14,7 +14,7 @@ The default GitHub Actions token can create the content pull request, but that a
 
 Review content-update pull requests for changed source domains, suspicious titles, talent schema changes, prerequisite changes and unusually large removals. Run all validation before merging. Newly announced mechanics may need guide edits that the sync script cannot make.
 
-For Cloudflare Pages, connect the repository, choose `npm run content:sync && npm run assets:talents && npm run build`, output directory `out`, and Node 24. Set the canonical site URL configuration used by metadata to the actual production domain before release. Keep tokens in account or repository secrets rather than source files. Verify the homepage, a direct nested guide URL, a missing URL, mobile navigation, images and metadata on the published host.
+Cloudflare Pages is connected to the repository with build command `npm run content:sync && npm run assets:talents && npm test && npm run build`, output directory `out`, and Node 24.16.0. The canonical production site is https://azeroth-revisited.pages.dev. Keep credentials in account or repository secrets rather than source files. Verify the homepage, a direct nested guide URL, a missing URL, mobile navigation, images and metadata on the published host. See [deployment evidence](deployment-evidence.md) for the release record.
 
 Rollback uses the previous known-good commit or previous Pages deployment. Feed failure should not remove the last successful snapshot. A browser test report and production smoke check belong with a release record.
 
