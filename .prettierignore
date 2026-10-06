@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+package-lock.json
+src/content/talents.json
+public
+test-results
+playwright-report

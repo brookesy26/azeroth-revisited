@@ -1,0 +1,444 @@
+[
+  {
+    "slug": "returning-players",
+    "title": "Welcome back to Azeroth.",
+    "description": "A practical starting point for returning Vanilla and Classic players. Keep the memories, then recheck your talents, race choices and plans for the journey.",
+    "eyebrow": "RETURNING PLAYER GUIDE",
+    "updated": "6 October 2026",
+    "sources": ["announcement", "roster", "hunter-druid", "systems", "world"],
+    "sections": [
+      {
+        "title": "Start with the version you are joining",
+        "body": "Forever is a separate, continuing World of Warcraft experience alongside modern WoW and Classic. It builds on the original continents and level-60 world. Pick Forever in the launcher and check the official access instructions before making plans with friends."
+      },
+      {
+        "title": "Relearn your character before choosing a build",
+        "body": "The familiar classes remain recognisable, but an old talent screenshot is not enough. Look at the current beta tree and read what each talent does. A familiar name can hide an adjusted effect.",
+        "bullets": [
+          "Compare your preferred class and role against its current talent trees.",
+          "Check the available race/class combinations rather than assuming Vanilla restrictions.",
+          "Treat levelling, dungeon and PvP builds as different choices; no single beta build is verified best for every activity."
+        ]
+      },
+      {
+        "title": "Plan a route with room to explore",
+        "body": "Use your knowledge of the original world as a starting point. New areas, stories and dungeon adventures can change the path you want to take. Keep your route flexible and collect relevant quests before travelling to a dungeon."
+      },
+      {
+        "title": "Check the equipment instead of trusting an old best-in-slot list",
+        "body": "Forever revisits equipment and quest rewards. Read the stats on an item in the current client, consider your intended role, and avoid spending all your gold on a Vanilla gearing assumption."
+      },
+      {
+        "title": "Get a small group ready",
+        "body": "Our recommendation is to agree a faction, decide which roles each friend enjoys, and arrange a first session that leaves time for trainers, professions and exploration. Share the launch guide rather than relying on screenshots of dates posted in different timezones."
+      }
+    ],
+    "comparison": [
+      [
+        "World",
+        "Original Azeroth",
+        "Original continents with new areas and stories"
+      ],
+      [
+        "Character choice",
+        "Original race/class combinations",
+        "Skyborne and additional combinations"
+      ],
+      [
+        "Builds",
+        "Vanilla talent recommendations",
+        "Revisited talent trees and beta tuning"
+      ],
+      [
+        "Equipment",
+        "Established Vanilla lists",
+        "Updated stats and rewards: recheck each item"
+      ]
+    ]
+  },
+  {
+    "slug": "coming-from-retail",
+    "title": "Coming from Retail? Begin again.",
+    "description": "A transition guide for players moving from modern WoW to Forever. All advice on this site is for Forever; this page explains the habits and expectations to rethink.",
+    "eyebrow": "RETAIL TO FOREVER",
+    "updated": "6 October 2026",
+    "sources": [
+      "announcement",
+      "hunter-druid",
+      "priest-warrior",
+      "systems",
+      "legacy",
+      "roster"
+    ],
+    "sections": [
+      {
+        "title": "Understand the progression you are signing up for",
+        "body": "Forever centres its adventure on the original world and a level-60 foundation. Approach it as a new character journey rather than another modern expansion progression track. New content is intended to keep developing this version of Azeroth."
+      },
+      {
+        "title": "Treat class knowledge as a head start, not a rotation",
+        "body": "Your Retail keybinds and experience with a role can help, but the spells, talents and combat pacing are version-specific. Read your current spellbook and train abilities before assuming a modern rotation will work.",
+        "bullets": [
+          "Make room on your bars for crowd control and utility.",
+          "Ask your group to agree a pull target and a crowd-control target.",
+          "Practise one small pull before trying the larger pulls you may be comfortable with in Retail."
+        ]
+      },
+      {
+        "title": "Learn the talent and trainer rules",
+        "body": "Standard class talents begin at level 10. Blizzard describes the familiar point-based structure with a new 16-point milestone. Talent changes, including Legacy changes, require a class trainer in a major city; dual specialisation becomes available at level 40. Check current beta costs in the client instead of assuming instant free switching."
+      },
+      {
+        "title": "Respect the pace of a group",
+        "body": "Blizzard’s stated combat direction puts threat, controlled pulls and class identity at the centre of dungeon play. Our preparation advice is to let the tank establish control, watch the healer’s resources, and use your utility when a pull goes wrong. This is not a Mythic+ route or a Retail encounter guide."
+      },
+      {
+        "title": "Choose from Forever’s roster",
+        "body": "Forever’s announced roster has nine classes. Check its race/class table before planning a character; your favourite modern combination may not be available here. New combinations and Skyborne expand the choices without bringing the full modern roster into this game."
+      },
+      {
+        "title": "Discover account progression through Legacy",
+        "body": "Legacy rewards participation across the Forever world. Account-wide points can support individual characters, with character-specific spending choices. See the Legacy guide before assuming account features work exactly like those in Retail."
+      }
+    ],
+    "comparison": [
+      [
+        "Character journey",
+        "Modern expansion progression",
+        "Level-60 foundation in original Azeroth"
+      ],
+      [
+        "Talent build",
+        "Your modern class tree",
+        "Forever’s own three-tree point system"
+      ],
+      [
+        "Talent changes",
+        "Your familiar Retail workflow",
+        "Class trainer; dual specialisation at 40"
+      ],
+      [
+        "Combat",
+        "Your Retail rotation and pull habits",
+        "Relearn your kit, threat and crowd control"
+      ],
+      [
+        "Races/classes",
+        "Modern WoW roster",
+        "Nine announced classes, with Forever-specific combinations"
+      ]
+    ]
+  },
+  {
+    "slug": "vanilla-vs-forever",
+    "title": "Vanilla roots. A different adventure.",
+    "description": "The comparison that sits behind every guide: what is familiar, what has changed, and which assumptions need checking in beta.",
+    "eyebrow": "VANILLA VS FOREVER",
+    "updated": "6 October 2026",
+    "sources": ["world", "systems", "hunter-druid", "roster", "legacy"],
+    "sections": [
+      {
+        "title": "The world remains the starting point",
+        "body": "Forever begins in the early original-Azeroth era, rather than following every later expansion’s story. Its new content explores places and mysteries inside that setting. A familiar location can therefore have a different route, reward or story."
+      },
+      {
+        "title": "Talent trees preserve the outline, not every old answer",
+        "body": "The old point-based style is recognisable, but classes have new and revised choices. Some class buffs move out of talents into the standard toolkit. Read current descriptions before copying a build."
+      },
+      {
+        "title": "The gearing puzzle is being revisited",
+        "body": "The systems recap describes unified hit and critical-strike categories, changes to healing equipment, and revised drops. Those changes make old assumptions about hybrid equipment less reliable. Our advice is to compare the item in front of you with what your character needs now."
+      },
+      {
+        "title": "More reasons to stay in the world",
+        "body": "Camping, expanded professions and Legacy offer additional activities alongside quests and dungeons. These are part of Forever’s design, not evidence that every feature from another version has been imported."
+      },
+      {
+        "title": "What we will not call confirmed",
+        "body": "A client file can contain unfinished or unused content. We distinguish Blizzard announcements from the maintained community talent data used by our calculator. Speculative new classes, unverified boss strategies and unexplored quest chains are not presented as released content."
+      }
+    ],
+    "comparison": [
+      [
+        "Talent milestones",
+        "11, 21 and 31 points",
+        "Additional 16-point milestone"
+      ],
+      [
+        "Specialisation",
+        "One active talent setup",
+        "Dual specialisation at level 40"
+      ],
+      [
+        "Equipment",
+        "Separate familiar stat categories",
+        "Itemisation changes: inspect current stats"
+      ],
+      [
+        "World activity",
+        "Quests, crafting and groups",
+        "New stories, camping and Legacy"
+      ],
+      [
+        "Playable race",
+        "Original race roster",
+        "Skyborne added; faction-specific class access"
+      ]
+    ]
+  },
+  {
+    "slug": "questing",
+    "title": "Questing through a changed Azeroth.",
+    "description": "Plan your Forever levelling journey with a practical checklist, new-world pointers and clear limits on what has been verified.",
+    "eyebrow": "QUESTING & LEVELLING",
+    "updated": "6 October 2026",
+    "sources": ["world", "beta", "skyborne", "systems", "legacy"],
+    "sections": [
+      {
+        "title": "Before leaving your starting area",
+        "body": "Our recommended first-session checklist is to read your class abilities, visit your trainer, check your bags, and collect nearby quests with compatible objectives. Group similar journeys together, but allow time for unfamiliar quest text and new paths.",
+        "bullets": [
+          "Keep a little gold for training rather than buying every upgrade.",
+          "Choose professions you want to use throughout the journey.",
+          "Ask friends to agree meeting places and faction before travelling.",
+          "Use the quest log to check objectives and levels; this guide does not invent coordinates."
+        ]
+      },
+      {
+        "title": "Early levelling and the beta boundary",
+        "body": "Blizzard’s beta announcement began with a level-20 cap and said level 30 would open later. Those are testing limits, not the level-60 launch cap. Check the latest beta notes for what is actually unlocked in your current session."
+      },
+      {
+        "title": "A new starting route: Zephras Isle",
+        "body": "The Skyborne introduction identifies Zephras Isle as a level 1–12 starting experience. Horde or Alliance alignment is chosen at character creation. This route accompanies the Skyborne unlock, so check your account entitlement before planning it."
+      },
+      {
+        "title": "New destinations on the way to 60",
+        "body": "Riverglades and Mount Hyjal are part of the announced world expansion. We link the official world recap instead of promising a precise efficient route through areas whose quest availability and rewards can change during testing."
+      },
+      {
+        "title": "Use dungeon quests as a reason to form a group",
+        "body": "Before entering a dungeon, check your log for related quests, arrange roles and confirm the current entrance and level guidance. Our recommendation is to plan time for travel and regrouping rather than treating every dungeon as a short detour."
+      },
+      {
+        "title": "Check rewards for your actual role",
+        "body": "Blizzard’s itemisation recap gives examples of additional quest reward choices for casters, including a ring from Mor’ladim’s story and a spell-oriented option from the Nesingwary quests. The important habit is to compare all current reward choices instead of remembering only the Vanilla weapon."
+      },
+      {
+        "title": "What this guide currently verifies",
+        "body": "This is a sourced levelling preparation guide, not a tested step-by-step route for every quest. Exact objective locations, prerequisite chains and drop-rate claims will be added only when they can be verified against the current Forever client or a maintained source."
+      }
+    ]
+  },
+  {
+    "slug": "races-and-areas",
+    "title": "New faces. Roads not taken.",
+    "description": "Meet the Skyborne, check the new race/class combinations, and explore the announced additions to original Azeroth.",
+    "eyebrow": "RACES & NEW AREAS",
+    "updated": "6 October 2026",
+    "sources": ["skyborne", "roster", "world", "announcement", "roadmap"],
+    "sections": [
+      {
+        "title": "Skyborne: the new playable race",
+        "body": "Skyborne begin on Zephras Isle and choose Horde or Alliance at character creation. Both sides can choose Druid, Hunter, Rogue or Warrior. Horde Windshapers can also be Shaman; Alliance High Order Skyborne can also be Mage. The official edition information makes this race and starting experience an optional paid unlock."
+      },
+      {
+        "title": "Check the full faction roster",
+        "body": "Blizzard’s roster adds Human Hunter, Gnome Priest, Dwarf Shaman, Orc Mage, Troll Warlock and Undead Paladin to familiar choices. Use the current official race/class table before making a character, rather than assuming the old faction limits apply everywhere."
+      },
+      {
+        "title": "No additional launch class confirmed here",
+        "body": "Blizzard currently lists nine available classes: Warrior, Paladin, Hunter, Rogue, Priest, Shaman, Mage, Warlock and Druid. A new race/class combination is not a new class. Future surveys or player wishes do not establish a launch roster."
+      },
+      {
+        "title": "Zephras Isle",
+        "body": "This new level 1–12 starting area introduces the Skyborne’s elemental homeland and its crisis. Our advice is to read its story on a first visit rather than expecting an old starting-zone route to fit."
+      },
+      {
+        "title": "Riverglades and Mount Hyjal",
+        "body": "The Found Photos recap describes new adventures in Riverglades and Mount Hyjal, alongside additions to existing places. We treat announced settings as confirmed destinations while leaving precise route and tuning claims to later verification."
+      },
+      {
+        "title": "Familiar places, fresh stories",
+        "body": "The world recap also explores original Azeroth through revised starting experiences, travel and unfinished story threads. Look for new content when revisiting an old zone. Classic artwork on this site is labelled as atmosphere, not a screenshot proving what a new Forever area looks like."
+      }
+    ]
+  },
+  {
+    "slug": "dungeons-and-raids",
+    "title": "Gather your party.",
+    "description": "A sourced overview of Forever’s announced dungeon and raid adventures, with practical preparation for a new group.",
+    "eyebrow": "DUNGEONS & RAIDS",
+    "updated": "6 October 2026",
+    "sources": ["roadmap", "beta", "systems"],
+    "sections": [
+      {
+        "title": "The early beta dungeons",
+        "body": "The beta announcement identifies Hall of Thanes for levels 13–18 and Ruins of Lordaeron for levels 15–20 in the opening test content. These are advertised testing ranges; confirm current access and tuning before organising a run."
+      },
+      {
+        "title": "The announced dungeon roster",
+        "body": "The roadmap names Hall of Thanes, Ruins of Lordaeron, the Wetlands excavation site, City of Dalaran, Blackmaw Hold, Drowned City, Krol’dok Stronghold, Alcaz Prison and Shaper’s Terrace. We do not fill gaps in boss strategies or loot tables with Vanilla assumptions."
+      },
+      {
+        "title": "Raid plans",
+        "body": "Blizzard describes Barrow Deeps as a maximum-level 10-player challenge and Hyjal Summit as a 20-player raid. Its roadmap places the new raid opening on 9 December 2026. Keep the date distinct from the game launch."
+      },
+      {
+        "title": "Prepare for tactical pulls",
+        "body": "Before a first run, our recommended group plan is to assign tanking and healing roles, agree target markers, discuss crowd control and take small pulls until the group understands the encounter. Stop to check resources and explain an unfamiliar mechanic.",
+        "bullets": [
+          "Let the tank establish control before opening with heavy damage.",
+          "Avoid breaking a marked crowd-control effect.",
+          "Keep escape and recovery tools easy to reach.",
+          "Discuss quest objectives and loot expectations before entering."
+        ]
+      },
+      {
+        "title": "Why old loot lists need reviewing",
+        "body": "The itemisation recap says dungeon drops have been reconsidered and new rewards added. Check the current item tooltip and your role before chasing an established Vanilla list. No untested best-in-slot ranking is implied by this overview."
+      }
+    ]
+  },
+  {
+    "slug": "professions",
+    "title": "Make camp. Make something useful.",
+    "description": "Understand Forever’s Camping system and prepare professions that support your own journey and the players around you.",
+    "eyebrow": "PROFESSIONS & CAMPING",
+    "updated": "6 October 2026",
+    "sources": ["systems", "legacy"],
+    "sections": [
+      {
+        "title": "What camping adds",
+        "body": "Blizzard’s systems recap expands the cooking-fire idea into shared camps with crafted objects. The system connects rest, crafting utility and other players. Inspect the current objects and requirements in beta before planning materials."
+      },
+      {
+        "title": "Build your profession plan around use",
+        "body": "Our recommendation is to choose a profession because you want its output or group utility, then pair it with a sensible source of materials. Keep some bag space for ingredients and avoid assuming old recipes or vendor prices are unchanged."
+      },
+      {
+        "title": "Camp objects and recipes",
+        "body": "The official recap describes profession-specific camp contributions and more advanced blueprint recipes. Some camp benefits overlap with class buffs. Read tooltips rather than assuming every contribution stacks.",
+        "bullets": [
+          "Check what your current profession skill unlocks.",
+          "Ask what the group has already placed before contributing.",
+          "Carry the materials your chosen object actually needs.",
+          "Treat dungeon recipe drops as a reason to play, not a guaranteed drop."
+        ]
+      },
+      {
+        "title": "Legacy and tradeskills",
+        "body": "The Legacy article awards points at 150, 225 and 300 skill in non-gathering primary tradeskills. Legacy’s profession branch can support activities across characters, but each character chooses its own perk allocation."
+      },
+      {
+        "title": "A practical first-session checklist",
+        "body": "Find your profession trainer, learn the initial recipes you can use, and identify materials along your quest route. This is preparation advice; exact recipe efficiency routes and an auction economy forecast are not verified here."
+      }
+    ]
+  },
+  {
+    "slug": "legacy",
+    "title": "A legacy beyond one character.",
+    "description": "How Forever’s account-wide Legacy progression works, what unlocks it, and what returning players should understand before planning alts.",
+    "eyebrow": "LEGACY PROGRESSION",
+    "updated": "6 October 2026",
+    "sources": ["legacy"],
+    "sections": [
+      {
+        "title": "Unlocking the system",
+        "body": "Legacy opens when you earn your first Legacy Point. Blizzard says level 25 is the usual first unlock; reaching 150 in a non-gathering primary tradeskill or exploring the whole world can also unlock it."
+      },
+      {
+        "title": "Earn points across activities",
+        "body": "Challenges cover classes, tradeskills, PvP, adventure, dungeons and raids. Points are account-wide for non-Hardcore characters. You are encouraged to explore multiple activities, but you do not need alts to unlock all character advantages."
+      },
+      {
+        "title": "Spend for the character you are playing",
+        "body": "Each character can allocate account points independently across Professions, Adventure and Resourcefulness. The launch spending cap is 16 points per character. More account points therefore do not automatically mean every perk is active on one character."
+      },
+      {
+        "title": "Rewards and future rulesets",
+        "body": "Account progress also unlocks cosmetic rewards. Hardcore is not planned for launch and will have separate Legacy rules when introduced. Do not use the non-Hardcore rules to promise a future Hardcore advantage."
+      },
+      {
+        "title": "Choose a purpose before spending",
+        "body": "Our recommendation is to decide whether a character mainly quests, crafts or participates in groups, then read the current perks for that purpose. Review choices as your goals change rather than treating a beta allocation as a permanent universal answer."
+      }
+    ]
+  },
+  {
+    "slug": "launch",
+    "title": "Get ready for your next adventure.",
+    "description": "A launch preparation guide for returning players and players coming from Retail: dates, character decisions and a clear first-session plan.",
+    "eyebrow": "GET READY FOR LAUNCH",
+    "updated": "6 October 2026",
+    "sources": ["announcement", "roadmap", "beta", "roster", "hunter-druid"],
+    "sections": [
+      {
+        "title": "Launch time and timezone note",
+        "body": "The countdown follows the detailed Blizzard roadmap and edition section: 4 November 2026 at 3 pm PST, which is 23:00 UTC and UK time on that date. Another paragraph uses PDT, which would be one hour earlier. We explicitly use the PST schedule and will update if Blizzard clarifies the inconsistency. The timer reaching zero does not prove the servers are available."
+      },
+      {
+        "title": "Keep beta and raid dates separate",
+        "body": "The beta started on 17 September; the official beta article names 21 October as its last full testing day. The roadmap places new raid openings on 9 December. Check live official posts for schedule changes before arranging time off or a raid."
+      },
+      {
+        "title": "Your character decisions",
+        "body": "Agree your faction with friends, check the current race/class table, and review your class changes. If you want Skyborne, confirm the optional unlock. Do not buy a beta-access edition assuming it is required for ordinary launch access."
+      },
+      {
+        "title": "Launch checklist",
+        "body": "Our recommended preparation is simple: install the correct client, verify your subscription or game time, read your transition guide, and make a flexible plan with your group.",
+        "bullets": [
+          "Returning from Vanilla: start with the changed-world comparison.",
+          "Coming from Retail: read the Forever transition guide.",
+          "Inspect your class’s current talents; do not copy an old build blindly.",
+          "Plan early profession and trainer visits.",
+          "Leave time for exploration, queues and changes to the schedule."
+        ]
+      },
+      {
+        "title": "A first session that gets you comfortable",
+        "body": "Spend the first session learning your toolkit, reading new quest text and practising pulls. Finish with a clear next meeting point. This plan is advice for settling into Forever, not a claim that all routes and content have been tested."
+      }
+    ]
+  },
+  {
+    "slug": "faq",
+    "title": "Beta and launch: your questions.",
+    "description": "Straight answers about access, versions and what this fan guide can currently verify.",
+    "eyebrow": "FOREVER FAQ",
+    "updated": "6 October 2026",
+    "sources": ["announcement", "beta", "roster", "legacy", "talents"],
+    "sections": [
+      {
+        "title": "Do I need an extra purchase to play?",
+        "body": "Blizzard says launch access is included with a World of Warcraft subscription or game time. Optional upgrades add benefits such as the Skyborne race. Check the official shop for current regional terms rather than relying on a converted price."
+      },
+      {
+        "title": "How do I access beta?",
+        "body": "The official beta article describes selected invitations and beta access through eligible bundles. Verify the license in your Battle.net account and install through the launcher. Never enter credentials through an invitation link you do not trust."
+      },
+      {
+        "title": "Is Classic Plus a different product?",
+        "body": "Classic Plus is the community label associated with this expanded original-world direction. This site covers the announced World of Warcraft: Forever, not private-server projects or a different Classic ruleset."
+      },
+      {
+        "title": "Are there new classes?",
+        "body": "The official roster currently lists nine classes. We cover the new Skyborne race and additional race/class combinations. We will add a new class only after a reliable announcement and usable details."
+      },
+      {
+        "title": "Do you have Retail guides?",
+        "body": "No. Coming from Retail is a transition guide into Forever. Every class, talent, questing and group preparation page here covers Forever."
+      },
+      {
+        "title": "How current is the talent calculator?",
+        "body": "The calculator uses the attributed community dataset linked on its page and shows the recorded build and refresh date. A scheduled content update checks for new data. The displayed build is a snapshot, not a claim of uninterrupted real-time coverage."
+      },
+      {
+        "title": "How is news updated?",
+        "body": "We import titles, dates and links from a Forever-focused feed of Blizzard posts. Full articles stay with the original publisher. If refresh fails, the last good snapshot remains with its real timestamp; we do not imply a failed update succeeded."
+      }
+    ]
+  }
+]

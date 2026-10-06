@@ -1,0 +1,42 @@
+name: Refresh attributed content
+on:
+  schedule:
+    - cron: "37 5 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: content-sync
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - run: npm run content:sync
+      - run: npm run assets:talents
+      - run: npm test
+      - name: Open content review
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.CONTENT_SYNC_TOKEN || github.token }}
+          branch: codex/content-refresh
+          delete-branch: true
+          commit-message: "Refresh attributed Forever news and talent snapshots"
+          title: "Refresh Forever news and talent data"
+          body: |
+            Refreshes maintained news and talent snapshots. Review changed source domains, build metadata and talent structure before merging. Guide prose still requires editorial review.
+
+            Validation: content sync and unit tests ran before this pull request was created. Run site CI before merging; pull requests created with the default GitHub token do not trigger another workflow automatically.
+          add-paths: |
+            src/content/news.json
+            src/content/talents.json
+            public/images/talents/
+          labels: ""

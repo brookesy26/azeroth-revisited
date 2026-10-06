@@ -1,0 +1,24 @@
+name: Refresh published content
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: published-content-refresh
+  cancel-in-progress: false
+jobs:
+  request-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Request Cloudflare Pages refresh
+        env:
+          BUILD_HOOK: ${{ secrets.CLOUDFLARE_PAGES_BUILD_HOOK }}
+        run: |
+          if [ -z "$BUILD_HOOK" ]; then
+            echo 'Configure the CLOUDFLARE_PAGES_BUILD_HOOK repository secret to enable published refreshes.'
+            exit 1
+          fi
+          curl --fail --silent --show-error --output /dev/null -X POST "$BUILD_HOOK"

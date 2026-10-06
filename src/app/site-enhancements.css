@@ -1,0 +1,447 @@
+body.site {
+  margin: 0;
+  background: #17120f;
+}
+.site .wow-shell {
+  --wow-orange: #ffc27b;
+  --wow-muted: #e0cdb5;
+  font-size: 16px;
+}
+.site .wow-sidebar {
+  position: fixed;
+  overflow-y: auto;
+  z-index: 2;
+}
+.site .wow-main {
+  min-width: 0;
+}
+.site nav a {
+  color: inherit;
+  text-decoration: none;
+}
+.site .wow-sidebar nav,
+.site .navigation-drawer nav {
+  display: grid;
+  gap: 4px;
+}
+.site .wow-sidebar nav a,
+.site .navigation-drawer nav a {
+  display: block;
+  padding: 10px 12px;
+  min-height: 44px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  color: var(--wow-muted);
+}
+.site .wow-sidebar nav a[aria-current],
+.site .navigation-drawer nav a[aria-current] {
+  color: #ffd59a;
+  background: linear-gradient(90deg, #57331b, #2a1c13);
+  border-color: #77502d;
+  box-shadow: inset 3px 0 #ed9b48;
+}
+.site .wow-sidebar nav a:hover,
+.site .navigation-drawer nav a:hover {
+  background: #342519;
+  color: #fff1d8;
+}
+.site a.wow-brand {
+  text-decoration: none;
+  display: block;
+}
+.site .wow-top {
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.site .wow-top-note {
+  font-size: 11px;
+}
+.site .wow-beta-label {
+  font-size: 12px;
+}
+.site .search-link {
+  font-size: 13px;
+}
+.site .wow-cta {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+}
+.site .wow-cta:hover {
+  filter: brightness(1.15);
+}
+.site .wow-cta:disabled {
+  opacity: 0.6;
+  filter: none;
+  cursor: default;
+}
+.site .wow-hero-copy > p:not(.wow-kicker) {
+  font-size: 16px;
+}
+.site .wow-kicker {
+  font-size: 12px;
+}
+.site .wow-count-copy h2 {
+  font-size: 24px;
+}
+.site .wow-count-copy p,
+.site .wow-count-link {
+  font-size: 14px;
+}
+.site .wow-heading > a {
+  font-size: 14px;
+}
+.site .wow-heading {
+  flex-wrap: wrap;
+}
+.site .wow-label {
+  font-size: 12px;
+}
+.site .wow-news-copy p,
+.site .wow-inline-link {
+  font-size: 14px;
+}
+.site .wow-news-copy small,
+.site .art-caption,
+.site .feed-status {
+  font-size: 12px;
+  color: var(--wow-muted);
+}
+.site .wow-news-copy h3 a {
+  color: #fff1d8;
+}
+.site .wow-news-art {
+  background-size: cover;
+}
+.site .wow-class {
+  text-decoration: none;
+}
+.site .wow-class-grid {
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+}
+.site .wow-class span {
+  font-size: 12px;
+}
+.site .wow-retail-callout p:not(.wow-kicker) {
+  font-size: 14px;
+}
+.site .site-footer {
+  margin: 15px 31px 0;
+  padding-bottom: 22px;
+  font-size: 12px;
+}
+.site .guide-heading {
+  margin-bottom: 24px;
+}
+.site .guide-heading h1 {
+  margin: 18px 0;
+  font-size: 44px;
+}
+.site .wow-guide-meta {
+  font-size: 12px;
+}
+.site .guide-links {
+  margin-top: 30px;
+}
+.site .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+.site .guide-card {
+  padding: 21px;
+  border: 1px solid var(--wow-border);
+  background: var(--wow-panel);
+  color: var(--wow-text);
+  text-decoration: none;
+}
+.site .guide-card:hover {
+  border-color: #ffc27b;
+  background: #302116;
+}
+.site .guide-card p {
+  color: var(--wow-muted);
+  font-size: 15px;
+}
+.site .guide-card span {
+  color: var(--wow-orange);
+  font-size: 14px;
+}
+.site .class-card {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.site .class-card img {
+  border: 1px solid #bc8751;
+  flex-shrink: 0;
+}
+.site .contents {
+  padding: 18px 22px;
+  border: 1px solid var(--wow-border);
+  background: #261b13;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin: 20px 0 28px;
+}
+.site .contents strong {
+  width: 100%;
+}
+.site .contents a {
+  color: var(--wow-orange);
+  text-decoration: underline;
+  font-size: 14px;
+}
+.site .article-section {
+  margin: 30px 0;
+  scroll-margin-top: 24px;
+  max-width: 850px;
+}
+.site .article-section p,
+.site .article-section li {
+  color: var(--wow-muted);
+}
+.site ul,
+.site ol {
+  padding-left: 26px;
+}
+.site li {
+  margin: 10px 0;
+}
+.site .wow-comparison {
+  font-size: 15px;
+  table-layout: fixed;
+}
+.site .wow-comparison th {
+  font-size: 14px;
+}
+.site .wow-comparison tbody th {
+  width: 23%;
+  color: #fff1d8;
+  background: transparent;
+  border-bottom: 1px solid var(--wow-border);
+}
+.site .wow-comparison td,
+.site .wow-comparison th {
+  overflow-wrap: anywhere;
+}
+.site .comparison-wrap {
+  overflow-x: auto;
+}
+.site .wow-sources a,
+.site .wow-sources p {
+  font-size: 14px;
+}
+.site .wow-sources {
+  margin-bottom: 28px;
+}
+.site .news-row {
+  padding: 25px 0;
+  border-bottom: 1px solid var(--wow-border);
+}
+.site .news-row h2 {
+  margin: 9px 0;
+}
+.site .news-row time {
+  font-size: 13px;
+  display: block;
+  color: var(--wow-muted);
+}
+.site .search-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+.site input {
+  color: #fff1d8;
+  background: #20160f;
+  border: 1px solid #af8350;
+  padding: 12px;
+  font: inherit;
+  min-width: 0;
+}
+.site input[type="search"] {
+  flex: 1;
+  min-width: min(100%, 240px);
+}
+.site .skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 20;
+  padding: 15px;
+  background: #fff1d8;
+  color: #17120f;
+  transform: translateY(-150%);
+}
+.site .skip-link:focus {
+  transform: translateY(0);
+}
+.site :focus-visible {
+  outline: 3px solid #ffe3ae;
+  outline-offset: 4px;
+}
+.site main:focus {
+  outline: none;
+}
+.site .navigation-drawer {
+  color: #fff1d8;
+  background: #21170f;
+  width: min(340px, 90vw);
+  max-height: 90dvh;
+  margin: 20px auto 20px 10px;
+  padding: 22px;
+  border: 2px solid #b5854e;
+}
+.site .navigation-drawer::backdrop {
+  background: #000b;
+}
+.site .no-js-navigation {
+  padding: 15px 25px;
+}
+.site .feedback-error {
+  color: #ffd1bd;
+  border-left: 3px solid #ffc27b;
+  padding: 15px;
+}
+.site .talent-calculator {
+  margin: 32px 0;
+}
+.site .calculator-toolbar {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: end;
+  padding: 20px 0;
+}
+.site .calculator-toolbar label {
+  display: grid;
+  gap: 8px;
+}
+.site .calculator-toolbar button,
+.site .talent-calculator button {
+  color: #fff1d8;
+  background: #382416;
+  border: 1px solid #af8350;
+  padding: 9px 12px;
+  min-height: 44px;
+  font: inherit;
+}
+.site .talent-calculator button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.site .talent-trees {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.site .talent-tree {
+  border: 1px solid var(--wow-border);
+  background: linear-gradient(#2e2117, #19130f);
+  padding: 16px 12px;
+  min-width: 0;
+}
+.site .talent-tree h3 {
+  font-size: 20px;
+}
+.site .talent-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+.site .talent-node {
+  min-width: 0;
+  font-size: 12px;
+}
+.site .talent-node img {
+  width: 38px;
+  height: 38px;
+}
+.site .talent-node.selected,
+.site .talent-node.active {
+  box-shadow: 0 0 0 2px #ffc27b;
+}
+.site .talent-ranks {
+  display: block;
+  font-size: 12px;
+}
+.site .talent-detail {
+  padding: 20px;
+  border: 1px solid var(--wow-border);
+  background: #302115;
+  margin-top: 20px;
+}
+.site .calculator-message {
+  color: #f5d5ae;
+  min-height: 28px;
+}
+.site .share-fallback {
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  .site .talent-trees {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 740px) {
+  .site .wow-sidebar {
+    display: none;
+  }
+  .site .wow-top {
+    gap: 12px;
+  }
+  .site .wow-mobile-brand {
+    flex: 1;
+  }
+  .site .wow-class-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .site .guide-heading h1 {
+    font-size: 36px;
+  }
+  .site .wow-guide-header {
+    align-items: start;
+    gap: 15px;
+  }
+  .site .wow-guide-header h1 {
+    font-size: 30px;
+  }
+  .site .wow-comparison {
+    font-size: 13px;
+  }
+  .site .wow-comparison td,
+  .site .wow-comparison th {
+    padding: 12px 7px;
+  }
+  .site .wow-count-copy h2 {
+    font-size: 22px;
+  }
+  .site .wow-clock span {
+    min-width: 62px;
+  }
+  .site .site-footer {
+    margin: 15px 22px 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site *,
+  .site *::before,
+  .site *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+.site nav[aria-label="Breadcrumb"] {
+  display: block;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+.site nav[aria-label="Breadcrumb"] a {
+  display: inline;
+}
