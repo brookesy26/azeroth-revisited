@@ -42,5 +42,17 @@
   "talents": {
     "title": "WoW Forever: maintained beta talent dataset, CC BY 4.0 compilation",
     "url": "https://wow-forever.gg/developers/"
+  },
+  "quest-database": {
+    "url": "https://wow-forever.gg/db/quests/",
+    "title": "WoW Forever: maintained quest database"
+  },
+  "zephras-quests": {
+    "url": "https://wowforever.wclbox.com/en/renwu/zephras-isle",
+    "title": "WoW Forever database: Zephras quest records and maps"
+  },
+  "quest-help": {
+    "url": "https://foreveratlas.com/quests",
+    "title": "ForeverAtlas: selected quest walkthroughs and troubleshooting"
   }
 }

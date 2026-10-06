@@ -192,7 +192,16 @@
     "description": "Plan your Forever levelling journey with a practical checklist, new-world pointers and clear limits on what has been verified.",
     "eyebrow": "QUESTING & LEVELLING",
     "updated": "6 October 2026",
-    "sources": ["world", "beta", "skyborne", "systems", "legacy"],
+    "sources": [
+      "world",
+      "beta",
+      "skyborne",
+      "systems",
+      "legacy",
+      "quest-database",
+      "zephras-quests",
+      "quest-help"
+    ],
     "sections": [
       {
         "title": "Before leaving your starting area",
@@ -227,6 +236,10 @@
       {
         "title": "What this guide currently verifies",
         "body": "This is a sourced levelling preparation guide, not a tested step-by-step route for every quest. Exact objective locations, prerequisite chains and drop-rate claims will be added only when they can be verified against the current Forever client or a maintained source."
+      },
+      {
+        "body": "The community resources linked below provide Forever quest records, Zephras pickup and turn-in maps, and selected walkthroughs. Check your current quest text and beta build against the record. Their coverage and accuracy vary; these links do not establish a complete tested levelling route.",
+        "title": "Look up the quest you are playing"
       }
     ]
   },
