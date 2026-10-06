@@ -17,3 +17,7 @@ Review content-update pull requests for changed source domains, suspicious title
 For Cloudflare Pages, connect the repository, choose `npm run content:sync && npm run assets:talents && npm run build`, output directory `out`, and Node 24. Set the canonical site URL configuration used by metadata to the actual production domain before release. Keep tokens in account or repository secrets rather than source files. Verify the homepage, a direct nested guide URL, a missing URL, mobile navigation, images and metadata on the published host.
 
 Rollback uses the previous known-good commit or previous Pages deployment. Feed failure should not remove the last successful snapshot. A browser test report and production smoke check belong with a release record.
+
+Verified GitHub repository settings allow Actions to create content-review pull requests. The published refresh workflow also requests a main-branch build after the Verify site workflow succeeds for this repository's main branch. This uses the restricted hook even if the native provider push webhook does not fire. Source cloning and previews were verified; native webhook delivery was not verified during initial setup.
+
+For hosted smoke checks set PW_BASE_URL to the HTTPS site URL and run the browser suite; the configuration then skips starting a local web server.
