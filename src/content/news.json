@@ -1,7 +1,35 @@
 {
-  "updatedAt": "2026-10-06T07:18:57.483Z",
+  "updatedAt": "2026-10-10T11:21:42.966Z",
   "feed": "https://wow-forever.gg/official.xml",
   "items": [
+    {
+      "title": "Re: Brief Beta Realm Maintenance - 6 October",
+      "url": "https://eu.forums.blizzard.com/en/wow/t/brief-beta-realm-maintenance-6-october/634008/3",
+      "date": "2026-10-06T21:53:05.000Z",
+      "source": "Blizzard",
+      "category": "EU forums"
+    },
+    {
+      "title": "Re: Brief Beta Realm Maintenance - October 6",
+      "url": "https://us.forums.blizzard.com/en/wow/t/brief-beta-realm-maintenance-october-6/2374348/3",
+      "date": "2026-10-06T21:52:54.000Z",
+      "source": "Blizzard",
+      "category": "US forums"
+    },
+    {
+      "title": "Brief Beta Realm Maintenance - 6 October",
+      "url": "https://eu.forums.blizzard.com/en/wow/t/brief-beta-realm-maintenance-6-october/634008/1",
+      "date": "2026-10-06T21:21:33.000Z",
+      "source": "Blizzard",
+      "category": "EU forums"
+    },
+    {
+      "title": "Brief Beta Realm Maintenance - October 6",
+      "url": "https://us.forums.blizzard.com/en/wow/t/brief-beta-realm-maintenance-october-6/2374348/1",
+      "date": "2026-10-06T21:20:40.000Z",
+      "source": "Blizzard",
+      "category": "US forums"
+    },
     {
       "title": "Brief Realm Maintenance - 6 October",
       "url": "https://eu.forums.blizzard.com/en/wow/t/brief-realm-maintenance-6-october/633813/1",
@@ -225,34 +253,6 @@
       "date": "2026-09-28T23:24:55.000Z",
       "source": "Blizzard",
       "category": "US forums"
-    },
-    {
-      "title": "Watch Holly Longdale and Clay Stone’s Keynote Presentations Live from PAX Aus 9-11 October",
-      "url": "https://worldofwarcraft.blizzard.com/en-us/news/24302503",
-      "date": "2026-09-28T22:00:00.000Z",
-      "source": "Blizzard",
-      "category": "WoW site"
-    },
-    {
-      "title": "Re: Gold buying rules",
-      "url": "https://us.forums.blizzard.com/en/wow/t/gold-buying-rules/2364933/43",
-      "date": "2026-09-28T20:06:14.000Z",
-      "source": "Blizzard",
-      "category": "US forums"
-    },
-    {
-      "title": "Re: Realm is full",
-      "url": "https://us.forums.blizzard.com/en/wow/t/realm-is-full/2363282/19",
-      "date": "2026-09-27T17:57:56.000Z",
-      "source": "Blizzard",
-      "category": "US forums"
-    },
-    {
-      "title": "Beta Realm Restarts Incoming - 25 September",
-      "url": "https://eu.forums.blizzard.com/en/wow/t/beta-realm-restarts-incoming-25-september/631613/1",
-      "date": "2026-09-25T17:59:34.000Z",
-      "source": "Blizzard",
-      "category": "EU forums"
     }
   ]
 }
